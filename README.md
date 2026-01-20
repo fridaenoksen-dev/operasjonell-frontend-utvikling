@@ -1,2 +1,10 @@
 # operasjonell-frontend-utvikling
-Mappeoppgave 1–3 i Operasjonell frontend-utvikling (1. år). Repoet viser utviklingsprosess med branches, PR og review.
+
+ 3. Når vi er ferdig
+- Push koden din
+- Lag en Pull Request
+- Spør en annen om å se på den
+- Merge når den er OK!
+
+Trenger du hjelp?
+Spør [ditt navn] 
