@@ -54,4 +54,49 @@ Kundecase: Arbeidskrav 1-3
 - Flytt den til "In Progress"
 - Assign deg selv til oppgaven
 
- 2️⃣ Lag en branch
+ 2️⃣ Lag en branch-GitHub (enkelt)
+
+1. Gå til repository på GitHub**
+
+2. Klikk på "main" 
+3. Skriv nytt branch-navn
+Skriv: `ditt-navn/hva-du-gjør`
+4. Klikk "Create branch"
+5. Hent branchen lokalt:
+git fetch
+git checkout ditt-navn/hva-du-gjør
+
+
+---
+
+
+🔄 Bytte mellom branches:
+
+Se alle branches:
+
+git branch
+
+
+Bytt til main:
+
+git checkout main
+
+
+Bytt til din branch:
+
+git checkout Dastan/login-side
+
+
+---
+✅ Sjekkliste:
+
+- [ ] `git checkout main`
+- [ ] `git pull`
+- [ ] `git checkout -b ditt-navn/oppgave`
+- [ ] Skriv kode
+- [ ] `git add .`
+- [ ] `git commit -m "beskrivelse"`
+- [ ] `git push origin ditt-navn/oppgave`
+- [ ] Lag Pull Request på GitHub
+
+---
