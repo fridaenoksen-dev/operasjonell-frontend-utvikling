@@ -1,4 +1,4 @@
-# operasjonell-frontend-utvikling
+# Operasjonell-frontend-utvikling- Emne 2
 
 📖 Om prosjektet
 Stay er en digital bookingnettside for små Bed and Breakfast-steder. Løsningen gjør det enkelt for brukere å finne ledige rom, lese anmeldelser og sende bookingforespørsler.
