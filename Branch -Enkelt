@@ -7,7 +7,7 @@ GitHub (enkelt)
 Skriv: `ditt-navn/hva-du-gjør`
 4. Klikk "Create branch"
 5. Hent branchen lokalt:
-git fetch
+git branch
 git checkout ditt-navn/hva-du-gjør
 
 
