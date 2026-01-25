@@ -1,32 +1,30 @@
-🎯 ARBEIDSFLYT FOR HELE GRUPPEN
+📋 ARBEIDSFLYT FOR STAY-PROSJEKTET
 
-STEG 1: LAG DIN BRANCH
-git checkout -b feature/ditt-navn-side
+STEG 1: START
+- Lag din egen branch
+- Kommando: git checkout -b feature/ditt navn-booking
 
-STEG 2: JOBB PÅ DIN SIDE
+STEG 2: JOBB
 - Skriv kode
 - Test at det fungerer
 
-STEG 3: LAGRE HVER DAG
-git add .
-git commit -m "Hva du gjorde"
-git push
+STEG 3: LAGRE
+- git add .
+- git commit -m "Beskrivelse av hva du gjorde"
+- git push
 
-STEG 4: NÅR FERDIG
+STEG 4: PULL REQUEST
 - Gå til GitHub
-- Lag Pull Request
+- Klikk "New Pull Request"
 - Fyll ut malen
-- Be noen se på koden
+- Send til teamet
 
-STEG 5: MERGE
-- Få godkjenning
+STEG 5: CODE REVIEW
+- Teammedlemene ser på koden
+- Gir tilbakemelding
+- Godkjenner
+
+STEG 6: MERGE
 - Merge til main
-- Ferdig! 🎉
-
----
-
-REGLER:
-✓ Alle jobber på sin egen branch
-✓ Commit minst 1 gang per dag
-✓ Test før Pull Request
-✓ Hjelp hverandre!
+- Slett din branch
+- Ferdig med denne oppgaven!
