@@ -1,0 +1,32 @@
+🎯 ARBEIDSFLYT FOR HELE GRUPPEN
+
+STEG 1: LAG DIN BRANCH
+git checkout -b feature/ditt-navn-side
+
+STEG 2: JOBB PÅ DIN SIDE
+- Skriv kode
+- Test at det fungerer
+
+STEG 3: LAGRE HVER DAG
+git add .
+git commit -m "Hva du gjorde"
+git push
+
+STEG 4: NÅR FERDIG
+- Gå til GitHub
+- Lag Pull Request
+- Fyll ut malen
+- Be noen se på koden
+
+STEG 5: MERGE
+- Få godkjenning
+- Merge til main
+- Ferdig! 🎉
+
+---
+
+REGLER:
+✓ Alle jobber på sin egen branch
+✓ Commit minst 1 gang per dag
+✓ Test før Pull Request
+✓ Hjelp hverandre!
