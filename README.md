@@ -10,10 +10,10 @@ Kundecase: Arbeidskrav 1-3
 ---
 
 👥 Teamet vårt
-- [Navn 1] - Prosessleder
-- [Dastan Hawrami] - Repo-ansvarlig / GitHub-oppsett
-- [Iben] - Design-ansvarlig
-- [Navn 4] - Kvalitetsansvarlig
+- [Frida] - Backlog for mappe 2+samle alt
+- [Dastan Hawrami] - Github-repo+Enkelt arbeidsflyt+Pr-mal
+- [Iben] - Wireframe/sidekart i Figjam
+- [Vetle] - Krav/Qa-sjekkleste+starte prosjektdokument 
 
 ---
 
@@ -38,10 +38,10 @@ Kundecase: Arbeidskrav 1-3
 
 | Student | Side | Ressurs (API) | Reserve |
 |---------|------|---------------|---------|
-| [Navn 1] | Romsoversikt | `rooms` (GET, POST) | [Navn 2] |
-| [Navn 2] | Min profil | `users` (GET, PATCH, DELETE) | [Navn 3] |
-| [Navn 3] | Mine bookinger | `bookings` (GET, POST, DELETE) | [Navn 4] |
-| [Navn 4] | Anmeldelser | `rooms/reviews` (GET, POST, DELETE) | [Navn 1] |
+| [Vetle] | Romsoversikt | `rooms` (GET, POST) | [Navn 2] |
+| [Iben] | Min profil | `users` (GET, PATCH, DELETE) | [Navn 3] |
+| [Dastan] | Mine bookinger | `bookings` (GET, POST, DELETE) | [Navn 4] |
+| [Frida] | Anmeldelser | `rooms/reviews` (GET, POST, DELETE) | [Navn 1] |
 
 *Hver side må inneholde full CRUD-funksjonalitet mot API.
 
