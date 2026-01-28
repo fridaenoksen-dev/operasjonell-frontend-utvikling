@@ -72,31 +72,6 @@ Kundecase: Arbeidskrav i gruppen 1-3
 
 ---
 
-🔄 Bytte mellom branches:
 
-Se alle branches:
-
-git branch
-
-Bytt til main:
-
-git checkout main
-
-Bytt til din branch:
-
-git checkout Dastan/login-side
-
----
-
-✅ Sjekkliste:
-
-- [ ] `git checkout main`
-- [ ] `git pull`
-- [ ] `git checkout -b ditt-navn/oppgave`
-- [ ] Skriv kode
-- [ ] `git add .`
-- [ ] `git commit -m "beskrivelse"`
-- [ ] `git push origin ditt-navn/oppgave`
-- [ ] Lag Pull Request på GitHub
 
 ---
