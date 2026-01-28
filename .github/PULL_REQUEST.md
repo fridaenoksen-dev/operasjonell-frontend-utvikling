@@ -16,3 +16,4 @@ Screenshots
 
 Legg til bilde hvis du har endret noe visuelt.
 
+Legg til hvilket sak.nr du har fullført/jobbet med. 
