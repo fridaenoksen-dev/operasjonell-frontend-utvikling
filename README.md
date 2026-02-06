@@ -40,6 +40,7 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 - API: [Lenke til API-dokumentasjon]
 - Versjonskontroll: GitHub
 - Prosjektstyring: GitHub Projects
+- Windows eller MAC
 
 ---
 
