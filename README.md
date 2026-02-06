@@ -57,6 +57,8 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 ├── js/
 ├── assets/
 └── README.md
-Mer kommer etter hvert!
+
+
+Under oppdateringer
 ---
 Vi skal oppdatere README etter hvert som prosjektet utvikler seg 🎓
