@@ -10,9 +10,6 @@ Vår primærmålgruppe er privatpersoner som ønsker å booke overnatting hos sm
 
 Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversikt over sine tidligere opphold, slik at de enkelt kan bestille på samme sted igjen. 
 
-
-
-
 ---
 
 👥 Teamet vårt
@@ -40,7 +37,6 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 - API: [Lenke til API-dokumentasjon]
 - Versjonskontroll: GitHub
 - Prosjektstyring: GitHub Projects
-- Windows eller MAC
 
 ---
 
@@ -55,5 +51,12 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 
 \*Hver side må inneholde full CRUD-funksjonalitet mot API.
 
+/📂 Prosjektstruktur
+├── index.html
+├── css/
+├── js/
+├── assets/
+└── README.md
+Mer kommer etter hvert!
 ---
-
+Vi skal oppdatere README etter hvert som prosjektet utvikler seg 🎓
