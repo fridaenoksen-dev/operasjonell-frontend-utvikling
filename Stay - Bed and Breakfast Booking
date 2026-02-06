@@ -1,55 +1,231 @@
-📖 Om prosjektet
-Stay er en digital bookingnettside for små Bed and Breakfast-steder. Løsningen gjør det enkelt for brukere å finne ledige rom, lese anmeldelser og sende bookingforespørsler.
+Kravspesifikasjon
+Prosjektdokument
 
-Målgruppen: Privatpersoner som ønsker å booke overnatting hos Bed and Breakfast
+Innledning
+Kunde
+Vår kunde er Stay, som har mange små overnattingssteder. De har behov for en brukervennlig digital bookingløsning, slik at besøkende og brukere enkelt kan finne relevant informasjon og booke rom. 
+Prosjektet
+Stay er en digital tjeneste som gjør det enkelt å finne og booke rom hos små Bed & Breakfast-steder. Løsningen skal gi oversikt over tilgjengelighet, pris og romtype, samt støtte anmeldelser og bookingforespørsler.
+Målgruppe
+Vår primærmålgruppe er privatpersoner som ønsker å booke overnatting hos små Bed & Breakfast-steder.
 
-Kundecase: Arbeidskrav 1-3
+Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversikt over sine tidligere opphold, slik at de enkelt kan bestille på samme sted igjen. 
 
----
+Mål
+Produktmål
+Vi skal lage en fungerende løsning for Stay som gjør det enkelt å:
+Finne rom
+Se romdetaljer
+Sende inn bookingforespørsler
+Brukeren skal også kunne se egne bookinger og status på bookingen.
 
-👥 Teamet vårt
-- [Navn 1] - Prosessleder
-- [Dastan Hawrami] - Repo-ansvarlig / GitHub-oppsett
-- [Iben] - Design-ansvarlig
-- [Navn 4] - Kvalitetsansvarlig
+I tillegg skal vi oppfylle kravet om full CRUD der hver av oss eier minst én side som kan opprette, lese, oppdatere og slette data mot minst én av de tre ressursene.
 
----
+Prosessmål
+Vi skal jobbe iterativt i 1 ukes sprinter med et tydelig sprintmål hver uke. Vi skal bruke en enkel og realistisk backlog, estimere små arbeidsoppgaver og prioritere MÅ oppgaver før vi legger til noe mer. Vi dokumenterer beslutningene kort underveis og holder main stabil gjennom branch og PR når det er mulig. 
 
- 🎯 Funksjonalitet
-- ✅ Brukerregistrering og innlogging
-- ✅ Søk og filtrer rom basert på pris og egenskaper
-- ✅ Se romdetaljer med bilder og beskrivelser
-- ✅ Lese og skrive anmeldelser
-- ✅ Full CRUD-funksjonalitet (Create, Read, Update, Delete)
+Scope og MVP for Stay
+Hva vi mener med scope
+Brukerhistorier og arbeidsoppgaver hjelper oss å finne ut hva som faktisk er riktig problem å løse, og hvordan vi kan løse det på en god måte. Scope handler om hvor mye av den løsningen vi skal lage i den tiden vi har tilgjengelig. Dette blir ekstra viktig når vi jobber iterativt og lager en MVP. Vi må være enige tidlig om hva som er nok innhold i MVPen, slik at vi ikke planlegger mer enn vi kan levere.
+Prioritering av scope
+Vi prioriterer funksjoner i tre nivåer. MÅ er nødvendig for å løse kjerneproblemet og for å kunne demonstrere at løsningen virker. BØR er ønskelig, men ikke kritisk. KUN HVIS TID er ekstra funksjoner som kun tas med dersom vi ligger godt an.
+Scope creep og hvordan vi håndterer det
+Scope creep kan oppstå når nye idéer eller krav kommer inn underveis og tar tid fra det vi allerede har planlagt. Når noe nytt dukker opp, vurderer vi tre ting:
+Er det helt nødvendig å gjøre? 
+Er det nødvendig å gjøre denne sprinten?
+Påvirker det arbeid som allerede er gjort, slik at vi må gjøre om på ting? 
+Hvis det nye arbeidet ikke er viktigere enn sprintmålet, legger vi det i product backlog og prioriterer det på vanlig måte senere. Prosessleder passer på at vi ikke mister kontroll på leveransen.
 
----
+Product backlog og sprint backlog
+Product backlog er en levende liste med alle våre arbeidsoppgaver. Den oppdateres løpende når nye behov oppstår, eller når vi fjerner ting som ikke lenger er nødvendige. Sprintbacklog er en kortere liste med arbeidsoppgaver vi velger å jobbe med i den kommende sprinten. Før hver sprint velger vi oppgaver fra product backlog basert på prioritet, avhengigheter og kapasitet.
 
-🛠️ Teknologi
-- Frontend: HTML, CSS, JavaScript
-- API: [Lenke til API-dokumentasjon]
-- Versjonskontroll: GitHub
-- Prosjektstyring: GitHub Projects
+Brukerhistorier for Stay og eksempler på arbeidsoppgaver
+US 1 
+Brukerhistorie: Som besøkende ønsker jeg å se en liste over rom slik at jeg kan finne et sted å bo.
+Arbeidsoppgaver: 
+Lage RoomsList komponent. 
+Implementere GET rooms i API klient. 
+Lage loading og error state. 
+Teste at listen vises og at feil håndteres.
+Avhengigheter: API baseURL og routing til rooms.
+US 2
+Brukerhistorie: Som besøkende ønsker jeg å filtrere rom på pris og egenskaper slik at jeg raskt finner rom som passer
+Arbeidsoppgaver:
+Lage filter UI for pris og en feature. 
+Implementere filtrering i UI. 
+Lage tomtilstand for ingen treff. 
+Teste flere filterkombinasjoner.
+Avhengigheter: Romliste må eksistere.
+US 3 
+Brukerhistorie: Som besøkende ønsker jeg å se romdetaljer slik at jeg kan vurdere rommet før booking.
+Arbeidsoppgaver:
+Lage route rooms id. 
+Lage RoomDetails side. 
+Vise pris, maxGuests og features. 
+Teste at riktig rom vises når man klikker fra romlisten.
+Avhengigheter: Romliste og routing.
+US 4
+Brukerhistorie: Som en bruker ønsker jeg å velge en bruker i UI slik at jeg kan gjøre handlinger som krever userId.
+Arbeidsoppgaver:
+Lage velg bruker komponent. 
+Lagre valgt userId i state eller localStorage. 
+Vise valgt bruker i header. 
+Teste at bytte av bruker påvirker mine bookinger.
+Avhengigheter: Users data eller en midlertidig liste.
+US 5
+Brukerhistorie: Som en bruker ønsker jeg å sende en bookingforespørsel slik at jeg kan reservere ønskede datoer.
+Arbeidsoppgaver:
+Lage booking skjema på romdetaljer eller ny booking side. 
+Implementere POST booking. 
+Vise suksess eller feil i UI. 
+Teste gyldige og ugyldige datoer.
+Avhengigheter: RoomId fra romdetaljer og UserId fra valgt bruker.
+US 6 
+Brukerhistorie: Som en bruker ønsker jeg å se mine bookinger slik at jeg kan følge opp status.
+Arbeidsoppgaver:
+Lage “Mine bookinger” side. 
+Implementere GET bookings og filtrere på valgt userId. 
+Vise statusfelt tydelig. 
+Teste at listen endres når man bytter valgt bruker.
+Avhengigheter: Valgt userId.
 
----
+MVP scope for Stay
+MVP MÅ i Sprint 1
+Målet er å få på plass kjerneflyten: Finne rom, se romdetaljer, sende bookingforespørsler og se bookingen igjen.
+US 1: Se romliste.
+US 2: Filtrere rom på pris og egenskaper.
+US 3: Se romdetaljer.
+US 4: Velge bruker i UI som current user.
+US 5: Sende bookingforespørsel.
+US 6: “Se mine bookinger."
+Full CRUD per person på avtalte sider.
+MVP BØR hvis vi rekker
+Tomtilstand som forklarer at ingen rom matcher filteret.
+MVP KUN HVIS TID
+Opprette anmeldelser.
+Ekstra polering på UI utover det som trengs for brukbarhet.
+Fra plan til backlog
+Felles problembeskrivelse
+Stay skal gjøre det enkelt å finne rom og sende bookingforespørsler. Løsningen skal også støtte administrasjon av rom, bookinger og brukere via et API.
+Overordnede oppgaver
+Hovedoppgaver i løsningen for Stay: 
+Utforske rom 
+Filtrere rom 
+Se romdetaljer 
+Sende bookingforespørsel 
+Se og oppdatere bookingstatus 
+Administrere rom 
+Administrere bookinger 
+Administrere brukere
+Usecase diagram
+Vi visualiserer oppgavene i et use case diagram. Vi identifiserer aktører og hvordan de interagerer med systemet. For Stay bruker vi aktørene Besøkende, Bruker og Admin.
+Personas
+Vi lager enkle personas for aktørene (besøkende, bruker og admin), slik at vi ikke bare planlegger funksjoner, men også tar hensyn til behovene deres.
+Brukerhistorier og arbeidsoppgaver
+Brukerhistoriene beskriver problemene og behovene personen har. Ut fra disse kan vi lage konkrete arbeidsoppgaver for å bygge løsningen. Arbeidsoppgavene må være små nok til at en person kan gjøre det, og de må være konkrete og målbare. Derfor bryter vi ned hver brukerhistorie i flere arbeidsoppgaver. Brukerhistoriene kan endre seg over tid, men arbeidsoppgavene gir oss en tydelig vei fremover.
+Se full oversikt over UML-diagrammer, personas og brukerhistorier på Figma: https://www.figma.com/board/uJkwKVvnXNZwjdgzOkKarH/Mappeoppgave?node-id=32-64&t=K1E0yryQY9W8nqyb-1
 
-📂 Ansvarsfordeling per side
+Krav til løsning av oppgave
+Tekniske krav
+Løsningen skal utvikles som en nettside med HTML, CSS og Javascript
+Løsningen skal kommunisere med et API og benytte riktige HTTP-metoder for CRUD-operasjoner
+Prosjektet skal versjonhåndteres i GitHub
+Ikke-tekniske krav
+Løsningen skal være brukervennlig og enkel å navigere i
+Designet skal følge styletile
+Løsningen skal være responsiv og fungere på både mobil og desktop
+Universell utforming skal tas hensyn til (f.eks. kontrast, semantisk html)
+Ytelseskrav
+Sider og innhold skal lastes inn innen rimelig tid
+Brukeren skal få rask visuell tilbakemelding ved handlinger som søk og booking
+Sikkerhetskrav
+Kun innloggede brukere skal kunne opprette bookinger og anmeldelser
+Brukere skal kun kunne redigere eller slette egne data
+Input skal valideres før det sendes til API-et (f.eks. datoer, tomme felt)
 
-| Student | Side | Ressurs (API) | Reserve |
-|---------|------|---------------|---------|
-| [Navn 1] | Romsoversikt | `rooms` (GET, POST) | [Navn 2] |
-| [Navn 2] | Min profil | `users` (GET, PATCH, DELETE) | [Navn 3] |
-| [Navn 3] | Mine bookinger | `bookings` (GET, POST, DELETE) | [Navn 4] |
-| [Navn 4] | Anmeldelser | `rooms/reviews` (GET, POST, DELETE) | [Navn 1] |
+Definition of done
+Vi bruker dette som sjekkliste på slutten, og som en kontroll underveis slik at vi ikke glemmer kvalitet og dokumentasjon.
+Funksjonalitet
+Alle MÅ punktene i MVP er gjennomført.
+Brukere kan:
+Finne rom
+Filtrere
+Se romdetaljer
+Sende bookingforespørsel
+Se “mine bookinger”
+Full CRUF er implementert på de avtalte sidene slik at hver av oss kan vise til minst én side med create, read, update og delete mot minst én ressurs.
+UI oppdateres etter CRUD uten at man må laste inn siden manuelt.
+Kvalitet
+Siden fungerer på mobil og desktop.
+Viktige brukerflyter er testet. 
+Det finnes tydelige loading- og feilmeldinger der det er relevant. 
+Det er ingen kritiske errors i console.
+Navigasjonen fungerer og siden har en ryddig struktur. 
+QA og universell utforming
+Semantisk HTML er brukt der det passer.
+Skjemaer har labels eller tilsvarende. 
+Fokus fungerer ved tastaturnavigasjon på viktige elementer. 
+Bilder har alt tekster dersom de er informasjonsbærende.
+Kontrast og lesbarhet er vurdert.
+GitHub og arbeidsflyt
+Arbeidet er gjort i branches og merges til main via PR når mulig. 
+Minst én person har gjort review eller par review på viktige endringer. 
+Main er stabil og kan kjøres uten ekstra fiks.
+Dokumentasjon
+README er oppdatert med:
+Prosjektbeskrivelsen
+Hvordan man kjører prosjektet lokalt 
+Lenker til FigJam
+Oversikt over CRUD eierskap
+Beskriver hvordan man kan teste de viktigste funksjonene, spesielt CRUD sidene.
 
-*Hver side må inneholde full CRUD-funksjonalitet mot API.
+Risikoanalyse med aksjonspunkter
+Vi forventer at det vil dukke opp situasjoner som påvirker fremdriften og kvaliteten på arbeidet. Risikoene vi nevner under brukes aktivt, og hvis vi ser tegn på at en risiko er i ferd med å skje, gjør vi tiltak tidlig. 
 
----
+Risiko 1: Fravær eller redusert kapasitet i perioder
+Sannsynlighet: høy | Konsekvens: høy
 
-🚀 Hvordan jobbe sammen?
- 1️⃣ Finn en oppgave
-- Gå til "Projects" → "Stay - Sprint Planning"
-- Velg en oppgave fra "Todo"
-- Flytt den til "In Progress"
-- Assign deg selv til oppgaven
+Tegn: 
+Manglende respons i Teams.
+Oppgaver stopper opp. 
 
- 2️⃣ Lag en branch
+Tiltak: Varsle tidlig i Teams og resten av gruppen fordeler oppgavene til de som har kapasitet. Vi kan også redusere scope ved å flytte oppgaver til backlog. 
+
+Risiko 2: Scope creep og for mye arbeid i sprinten
+Sannsynlighet: høy | Konsekvens: høy
+
+Tegn:
+Det legges til nye idéer midt i sprinten.
+Sprintmålet er uklart. 
+Flere halvferdige oppgaver
+
+Tiltak: Nye forslag legges i product backlog først. Hvis noe må inn i sprinten må noe annet tas ut. Prosessleder passer på at sprintmålet holdes og at MÅ oppgaver prioriteres først.
+
+Risiko 3: Teknisk usikkerhet rundt API og CRUD, eller feil dataflyt
+Sannsynlighet: middels | Konsekvens: middels til høy
+
+Tegn: 
+Mye tid går til å debugge uten at man kommer fremover.
+
+Tiltak: Små oppgaver slik at det ikke blir for overveldende.
+
+Risiko 4: Konflikter når ting merges og ustabil main
+Sannsynlighet: middels | Konsekvens: middels til høy
+
+Tegn: 
+Feil dukker opp etter merge.
+
+Tiltak: Jobbe i små branches og ha hyppige PRs. Så bruker vi hverandre til review før merge. Hvis main blir ustabil stopper vi opp og justerer den nye funksjonaliteten til den er stabil igjen.
+
+Risiko 5: Kommunikasjonen stopper opp eller uklare avtaler
+Sannsynlighet: middels | Konsekvens: middels
+
+Tegn: 
+Uenigheter om hva som er avtalt. 
+Oppgaver blir gjort dobbelt. 
+Folk jobber i feil retning.
+
+Tiltak: Skrive korte beslutninger i et samlet område (FigJam) og statusmeldinger i Teams et par ganger i uka. Ved blokkeringer og/eller uklarheter tar vi et kort 15 minutters møte i stedet for lange chat-tråder.
+
+
+
