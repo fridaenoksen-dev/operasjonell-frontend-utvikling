@@ -1,11 +1,17 @@
 # Operasjonell-frontend-utvikling- Emne 2
 
 📖 Om prosjektet
-Stay er en digital bookingnettside for små Bed and Breakfast-steder. Løsningen gjør det enkelt for brukere å finne ledige rom, lese anmeldelser og sende bookingforespørsler.
 
-Målgruppen: Privatpersoner som ønsker å booke overnatting hos Bed and Breakfast
+Vår kunde er Stay, som har mange små overnattingssteder. De har behov for en brukervennlig digital bookingløsning, slik at besøkende og brukere enkelt kan finne relevant informasjon og booke rom. 
+Prosjektet
+Stay er en digital tjeneste som gjør det enkelt å finne og booke rom hos små Bed & Breakfast-steder. Løsningen skal gi oversikt over tilgjengelighet, pris og romtype, samt støtte anmeldelser og bookingforespørsler.
+Målgruppe
+Vår primærmålgruppe er privatpersoner som ønsker å booke overnatting hos små Bed & Breakfast-steder.
 
-Kundecase: Arbeidskrav i gruppen 1-3
+Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversikt over sine tidligere opphold, slik at de enkelt kan bestille på samme sted igjen. 
+
+
+
 
 ---
 
@@ -39,39 +45,14 @@ Kundecase: Arbeidskrav i gruppen 1-3
 
 📂 Ansvarsfordeling per side
 
-| Student  | Side           | Ressurs (API)                       | Reserve  |
+| Gruppe   | Side           | Ressurs (API)                       | Reserve  |
 | -------- | -------------- | ----------------------------------- | -------- |
-| [Vetle]  | Romsoversikt   | `rooms` (GET, POST)                 | [Navn 2] |
-| [Iben]   | Min profil     | `users` (GET, PATCH, DELETE)        | [Navn 3] |
-| [Dastan] | Mine bookinger | `bookings` (GET, POST, DELETE)      | [Navn 4] |
-| [Frida]  | Anmeldelser    | `rooms/reviews` (GET, POST, DELETE) | [Navn 1] |
+|          |                | rooms (GET, POST)                 | [Navn 2] |
+|          |                | users (GET, PATCH, DELETE)        | [Navn 3] |
+|          |                | bookings (GET, POST, DELETE)      | [Navn 4] |
+|          |                | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
 
 \*Hver side må inneholde full CRUD-funksjonalitet mot API.
 
 ---
 
-🚀 Hvordan jobbe sammen?
-1️⃣ Finn en oppgave
-
-- Gå til "Projects" → "Stay - Sprint Planning"
-- Velg en oppgave fra "Todo"
-- Flytt den til "In Progress"
-- Assign deg selv til oppgaven
-
-2️⃣ Lag en branch-GitHub (enkelt)
-
-1. Gå til repository på GitHub\*\*
-
-2. Klikk på "main"
-3. Skriv nytt branch-navn
-   Skriv: `ditt-navn/hva-du-gjør`
-4. Klikk "Create branch"
-5. Hent branchen lokalt:
-   git fetch
-   git checkout ditt-navn/hva-du-gjør
-
----
-
-
-
----
