@@ -1,0 +1,30 @@
+📋 ARBEIDSFLYT FOR STAY-PROSJEKTET
+
+STEG 1: START
+- Lag din egen branch
+- Kommando: git checkout -b feature/ditt navn-booking
+
+STEG 2: JOBB
+- Skriv kode
+- Test at det fungerer
+
+STEG 3: LAGRE
+- git add .
+- git commit -m "Beskrivelse av hva du gjorde"
+- git push
+
+STEG 4: PULL REQUEST
+- Gå til GitHub
+- Klikk "New Pull Request"
+- Fyll ut malen
+- Send til gruppen
+
+STEG 5: CODE REVIEW
+- gruppen/et medlem ser på koden
+- Gir tilbakemelding
+- Godkjenner
+
+STEG 6: MERGE
+- Merge til main
+- Slett din branch
+- Ferdig med denne oppgaven!
