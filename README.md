@@ -46,7 +46,6 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 | -------- | -------------- | --------------------------------- | -------- |
 |          |Forside         | rooms (GET, POST)                 | [Navn 2] |
 |Iben      |Login,registre  | users (GET, PATCH, DELETE)        | [Navn 3] |
-              Profil
 |          |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
 |Dastan    |Anmeldelser     | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
 
