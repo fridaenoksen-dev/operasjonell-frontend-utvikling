@@ -42,12 +42,13 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 
 📂 Ansvarsfordeling per side
 
-| Gruppe   | Side           | Ressurs (API)                       | Reserve  |
-| -------- | -------------- | ----------------------------------- | -------- |
-|          |                | rooms (GET, POST)                 | [Navn 2] |
-|          |                | users (GET, PATCH, DELETE)        | [Navn 3] |
-|          |                | bookings (GET, POST, DELETE)      | [Navn 4] |
-|          |                | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
+| Gruppe   | Side           | Ressurs (API)                     | Reserve  |
+| -------- | -------------- | --------------------------------- | -------- |
+|          |Forside         | rooms (GET, POST)                 | [Navn 2] |
+|Iben      |Login,registre  | users (GET, PATCH, DELETE)        | [Navn 3] |
+              Profil
+|          |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
+|Dastan    |Anmeldelser     | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
 
 \*Hver side må inneholde full CRUD-funksjonalitet mot API.
 
@@ -58,7 +59,5 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 ├── assets/
 └── README.md
 
-
-Under oppdateringer
 ---
-Vi skal oppdatere README etter hvert som prosjektet utvikler seg 🎓
+Vi oppdatere README etter hvert som prosjektet utvikler seg 🎓
