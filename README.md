@@ -44,9 +44,9 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 
 | Gruppe   | Side           | Ressurs (API)                     | Reserve  |
 | -------- | -------------- | --------------------------------- | -------- |
-|          |Forside         | rooms (GET, POST)                 | [Navn 2] |
+|Dastan    |Forside         | rooms (GET, POST)                 | [Navn 2] |
 |Iben      |Login,registre  | users (GET, PATCH, DELETE)        | [Navn 3] |
-|          |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
+|Frida     |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
 |Dastan    |Anmeldelser     | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
 
 \*Hver side må inneholde full CRUD-funksjonalitet mot API.
