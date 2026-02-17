@@ -17,7 +17,7 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 - [Frida] - Backlog for mappe 2+samle alt
 - [Dastan Hawrami] - Github-repo+Enkelt arbeidsflyt+Pr-mal
 - [Iben] - Wireframe/sidekart i Figjam
-- [Vetle] - Krav/Qa-sjekkleste+starte prosjektdokument
+- [    ] - Krav/Qa-sjekkleste+starte prosjektdokument
 
 ---
 
@@ -44,10 +44,10 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 
 | Gruppe   | Side           | Ressurs (API)                     | Reserve  |
 | -------- | -------------- | --------------------------------- | -------- |
-|          |Forside         | rooms (GET, POST)                 | [Navn 2] |
+|Dasatan   |Forside         | rooms (GET, POST)                 | [Navn 2] |
 |Iben      |Login,registre  | users (GET, PATCH, DELETE)        | [Navn 3] |
-|          |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
-|Dastan    |Anmeldelser     | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
+|Fride     |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
+|          |Anmeldelser     | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
 
 \*Hver side må inneholde full CRUD-funksjonalitet mot API.
 
