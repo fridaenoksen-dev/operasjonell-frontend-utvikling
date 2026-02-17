@@ -1,0 +1,30 @@
+📝 Hva har jeg gjort?
+Beskriv med egne ord
+
+🔗 Hvilken issue løser dette?
+Skriv noe ord
+
+🎯 Hvilken side/funksjonalitet?
+- [ ] Romsoversikt
+- [ ] Min profil
+- [ ] Mine bookinger
+- [ ] Anmeldelser
+- [ ] Annet: [spesifiser]
+
+✅ CRUD-sjekk (hvis relevant):
+- [ ] Create (POST) - fungerer
+- [ ] Read (GET) - fungerer
+- [ ] Update (PATCH/PUT) - fungerer
+- [ ] Delete (DELETE) - fungerer
+
+✅ Testing:
+- [ ] Testet på desktop
+- [ ] Testet på mobil
+- [ ] Ingen feilmeldinger i konsollen
+- [ ] API- fungerer som forventet
+
+📸 Skjermbilder
+[Lim inn her]
+
+💬 Notater til reviewer
+Noe spesielt å se etter
