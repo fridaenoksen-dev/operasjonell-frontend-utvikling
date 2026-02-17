@@ -7,16 +7,70 @@
     <title>Stay - Bed and Breakfast</title>
   </head>
   <body>
-    <div class="Logo"><h1>Stay</h1></div>
-    <nav>
-      <a href="Index.html">Hjem</a>
-      <a href="Booking.html">Booking</a>
-      <a href="Anmeldelser.html">Anmeldelser</a>
-    </nav>
-    <div class="push-buttons">
-      <button class="Logg-inn">Logg inn</button>
-      <button class="registrer">registrer</button>
-    </div>
+    <header>
+      <div class="Logo"><h1>Stay</h1></div>
+      <nav>
+        <a href="Index.html">Hjem</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Anmeldelser.html">Anmeldelser</a>
+      </nav>
+      <div class="push-buttons">
+        <button class="Logg-inn">Logg inn</button>
+        <button class="registrer">registrer</button>
+      </div>
+    </header>
+    <main>
+      <h3> Stay rom</h3>
+      <p class="info og intorduksjon"> Velg blant våres beste rom med unik utsikt</p>
+
+      <div class="innhold-container">
+        <div class="rom-liste">
+
+          <!-- rom 1 for slik jeg ser det-->
+           <div class="rom-kort">
+            <div class="rom-innhold">
+              <h3> Rom 1 - Enkeltrom</h3>
+              <p class="rom info">
+                Nyt den fantastiske utsikten over havet fra vårt romslige enkeltrom. Perfekt for deg som ønsker en rolig opphold.</p>
+                <div class="rom-detaljer">
+                  <span class="detalj">1 person</span>
+                  <span class="detalj">Enkeltseng</span>
+                  <span class="detalj">Eget bad</span>
+                  <span class="detalj">Tv og Wifi</span>
+                </div>
+                <p class="rom-pris">1600 kr/natt</p>
+                <button class="bestille-knapp">Book Rom</button>
+      </div>
+
+      <div class="søk-seksjon">
+        <h2> Søk etter ledig rom</h2>
+        <form id="søke-form">
+          <div class="søke-rad">
+            <div class="søke-felt">
+              <label for="innsjekk">Innsjekk</label>
+              <input type="dato" id="innsjekk" required>
+            </div>
+          </div>
+        </form>
+      </div>
+<div class="søke-felt">
+  <label for="Utsjekk">Ursjekk</label>
+  <input type="dato" id="Utsjekk" required>
+</div>
+
+<div class="søke-felt">
+  <label for="antall-personer">antall-personer</label>
+  <select id="antall-personer">
+  <option value="1">1 person</option>
+  <option value="2">2 person</option>
+  <option value="3">3 person</option>
+</select>
+</div>
+<div class="søke-felt">
+  <button type="submit" class="søke-knapp">Søk</button>
+</div>
+
+
   </body>
   <script></script>
 </html>
