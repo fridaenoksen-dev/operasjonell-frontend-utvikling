@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innlogging</title>
+  
+
+    </style>
+</head>
+<body>
+
+    <div class="forside-phone">
+    <div class="screen">
+
+    <h2>Vellkommen til Stay</h2>
+
+    <div class="input-group">
+        <input type="email" placeholder="email">
+    </div>
+
+     <div class="input-group">
+        <input type="password" placeholder="password">
+     </div>
+
+
+
+<button class="btn"> Login </button>
+
+<div class="link">
+<p><a href="#">Glemt password</a></p>
+<p> Har du ikke konto? <a href="#">Register meg</a></p></div>
+
+</div>
+</div>
+
+  <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(153deg,white, navy);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .forside-phone{
+            box-sizing: border-box;
+            width: 320px;
+            height: 620px;
+            border: 1px solid purple;
+            background: hsl(0, 36%, 18%);
+            border-radius: 40px;
+            padding: 18px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+         }
+         .forside-phone :before{
+            content:"" ;
+            display: block;
+            width: 140px;
+            height: 18px;
+            background: black;
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+
+         }
+         .screen{
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 30px;
+            padding: 60px 25px 40px 25px;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+         .h2{
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 30px;
+            column-rule: wheat;
+
+         }
+
+         .input-group{
+            margin-bottom: 20px;
+         }
+         .input-group input{
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1.9px solid #ccc;
+            font-size: 15px;
+            transition: 0.3s;
+            box-sizing: border-box;
+         }
+
+         .input-group input:focus{
+            border-color: #6a4ff7;
+            outline: none;
+         }
+
+         .btn{
+            width: 100%;
+            padding: 12px;
+            background: #6a4ff7;
+            border: none;
+            color: wheat;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+
+         }
+         .btn:hover{
+            background: #5838e0;
+         }
+         .link{
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+         }
+         .link a{
+            color: #684ff6;
+            text-decoration: none;
+        
+         }
+@media (max-width: 400px){
+
+    .forside-phone{
+        transform: scale(0.45);
+    }
+}
+         
+         </style>
+</body>
+</html>
