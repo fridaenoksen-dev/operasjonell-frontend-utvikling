@@ -20,8 +20,10 @@
         <a href="login.html">Logg ut</a>
     </nav>
 
+    <h1>Mine bookinger</h1>
+
     <section class="booking-list" aria-label="Mine bookinger">
-      <h1>Mine bookinger</h1>
+      <h2>Kommende reiser</h2>
       <ul class="card-list">
         <li class="booking-card">
             <img class="room-image" src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png" alt="Dobbeltrom med sjøutsikt">
@@ -29,7 +31,7 @@
             <div class="booking-content">
                 <div class="booking-top">
                     <h2 class="room-name">Dobbeltrom med sjøutsikt</h2>
-                    <div class="status"><span class="status-approved">Godkjent</span>
+                    <div class="status"><span>Bekreftet</span>
                     </div>
                 </div>
 
@@ -63,8 +65,8 @@
                 </div>
 
                 <div class="actions">
-                    <button class="link-btn-edit">Endre booking</button>
-                    <button class="link-btn-cancel">Kanseller booking</button>
+                    <button class="btn-edit">Endre booking</button>
+                    <button class="btn-delete">Kanseller booking</button>
                 </div>
             </div>
         </li>
@@ -72,17 +74,43 @@
     </section>
     <section class="booking-list" aria-label="Tidligere besøk">
         <h2>Tidligere besøk</h2>
-        <ul class="card-list">
-            <li class="history-card">
-                <div class="history-content">
-                    <div class="history-top">
+            <li class="booking-card history-card">
+                <img class="room-image" src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png" alt="Dobbeltrom med sjøutsikt">
+
+                <div class="booking-content">
+                    <div class="booking-top">
                         <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
-                        <div class="status"><span class="status-finished">Fullført</span>
+                        <span class="status">Fullført</span>  
+                    </div> 
+
+                    <div class="dates">
+                        <div class="date-item">
+                            <div class="date-label">Innsjekk</div>
+                            <div class="date-value">Lør, 10. sep</div>
+                        </div>
+                        <div class="date-item">
+                            <div class="date-label">Utsjekk</div>
+                            <div class="date-value">Søn, 11. sep</div>
+                        </div>
+                    </div>
+
+                    <hr class="divider">
+
+                    <div class="review-box has-review">
+                        <div class="review-content">
+                            <span class="review-label">Din anmeldelse</span>
+                            <span class="stars" aria-label="5 av 5 stjerner">★★★★★</span>
+                        </div>
+                        <p class="review-text">Veldig hyggelig opphold og god frokost!</p>
+
+                        <div class="review-actions">
+                            <button class="btn-edit">Rediger anmeldelse</button>
+                            <button class="btn-delete">Slett anmeldelse</button>
                         </div>
                     </div>
                 </div>
+                
             </li>
-        </ul>
     </section>
   </body>
 </html>
