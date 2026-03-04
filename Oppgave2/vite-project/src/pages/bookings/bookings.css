@@ -1,3 +1,22 @@
+nav {
+  background: #fff;
+  padding: 12px 16px;
+  color: #333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
 .booking-list {
   max-width: 980px;
   margin: 0 auto;
