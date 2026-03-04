@@ -47,12 +47,21 @@
   font-size: 22px;
 }
 
-.status {
+.status-approved {
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 14px;
   white-space: nowrap;
   background: #4caf50;
+  color: white;
+}
+
+.status-finished {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  white-space: nowrap;
+  background: #666;
   color: white;
 }
 
@@ -79,15 +88,15 @@
   margin: 12px 0;
 }
 
-.tags {
+.features {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 14px;
 }
 
-.tag {
-  background: #eee;
+.feature {
+  background: #f4edeb;
   padding: 6px 12px;
   border-radius: 12px;
   font-size: 13px;
@@ -129,10 +138,10 @@
 }
 
 .link-btn {
-  background: none;
-  border: none;
-  text-decoration: underline;
-  cursor: pointer;
+  background: #b55a4a;
+  border: 1px solid #b55a4a;
+  border-radius: 12px;
+  padding: 6px 12px;
 }
 
 .link-btn-cancel {
@@ -141,4 +150,26 @@
   border: none;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.link-btn-edit {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.history-card {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  align-items: stretch;
+  background: #fff;
+}
+
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  padding: 12px 16px 0;
 }
