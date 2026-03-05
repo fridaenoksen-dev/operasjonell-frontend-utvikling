@@ -5,21 +5,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Oppgave2/vite-project/src/pages/bookings/bookings.css" />
-    <link rel="stylesheet" href="/Oppgave2/vite-project/src/css/components.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="/Oppgave2/vite-project/src/pages/bookings/bookings.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Oppgave2/vite-project/src/css/components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Mine bookinger</title>
   </head>
   <body>
-
     <nav>
-        <div class="logo-container">
-            <a href="index.html"><img src="/Oppgave2/vite-project/src/assets/images/stayLogo.png" class="logo" alt="Stay Logo"></a>
-        </div>
-        <a href="index.html">Forside</a>
-        <a href="bookings.html">Mine bookinger</a>
-        <a href="userProfile.html">Min profil</a>
-        <a class="logout-icon" href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img
+            src="/Oppgave2/vite-project/src/assets/images/stayLogo.png"
+            class="logo"
+            alt="Stay Logo"
+        /></a>
+      </div>
+      <a href="index.html">Forside</a>
+      <a href="bookings.html">Mine bookinger</a>
+      <a href="userProfile.html">Min profil</a>
+      <a href="login.html"></a>
+      <a><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
     </nav>
 
     <h1>Mine bookinger</h1>
@@ -28,91 +42,107 @@
       <h2>Kommende reiser</h2>
       <ul class="card-list">
         <li class="booking-card">
-            <img class="room-image" src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png" alt="Dobbeltrom med sjøutsikt">
+          <img
+            class="room-image"
+            src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png"
+            alt="Dobbeltrom med sjøutsikt"
+          />
 
-            <div class="booking-content">
-                <div class="booking-top">
-                    <h2 class="room-name">Dobbeltrom med sjøutsikt</h2>
-                    <div class="status"><span>Bekreftet</span>
-                    </div>
-                </div>
-
-                <div class="dates">
-                    <div class="date-item">
-                        <div class="date-label">Innsjekk</div>
-                        <div class="date-value">Lør, 10. sep</div>
-                    </div>
-                    <div class="date-item">
-                        <div class="date-label">Utsjekk</div>
-                        <div class="date-value">Søn, 11. sep</div>
-                </div>
+          <div class="booking-content">
+            <div class="booking-top">
+              <h2 class="room-name">Dobbeltrom med sjøutsikt</h2>
+              <div class="status"><span>Bekreftet</span></div>
             </div>
-            <hr class="divider">
+
+            <div class="dates">
+              <div class="date-item">
+                <div class="date-label">Innsjekk</div>
+                <div class="date-value">Lør, 10. sep</div>
+              </div>
+              <div class="date-item">
+                <div class="date-label">Utsjekk</div>
+                <div class="date-value">Søn, 11. sep</div>
+              </div>
+            </div>
+
+            <hr class="divider" />
 
             <div class="features">
-                <span class="feature">Dobbeltseng</span>
-                <span class="feature">Eget bad</span>
-                <span class="feature">Frokost inkludert</span>
+              <span class="feature">Dobbeltseng</span>
+              <span class="feature">Eget bad</span>
+              <span class="feature">Frokost inkludert</span>
             </div>
-            
+
             <div class="booking-bottom">
-                <div class="price">
-                    <div class="price-label">Totalt:</div>
-                    <div class="price-value">9 999,95 NOK</div>
+              <div class="price">
+                <div class="price-label">Totalt:</div>
+                <div class="price-value">9 999,95 NOK</div>
 
-                    <div class="meta">
-                        <div>Opprettet 2025-09-01 kl. 10:30:00</div>
-                        <div>Sist oppdatert 2026-01-15 kl. 10:00:00</div>
-                    </div>
+                <div class="meta">
+                  <div>Opprettet 2025-09-01 kl. 10:30:00</div>
+                  <div>Sist oppdatert 2026-01-15 kl. 10:00:00</div>
                 </div>
+              </div>
 
-                <div class="actions">
-                    <button class="btn-edit">Endre booking</button>
-                    <button class="btn-delete">Kanseller booking</button>
-                </div>
+              <div class="actions">
+                <button class="btn-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>Endre booking
+                </button>
+                <button class="btn-delete">
+                  <i class="fa-regular fa-trash-can"></i>Kanseller booking
+                </button>
+              </div>
             </div>
+          </div>
         </li>
       </ul>
     </section>
     <section class="booking-list" aria-label="Tidligere besøk">
-        <h2>Tidligere besøk</h2>
-            <li class="booking-card history-card">
-                <img class="room-image" src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png" alt="Dobbeltrom med sjøutsikt">
+      <h2>Tidligere besøk</h2>
+      <li class="booking-card history-card">
+        <img
+          class="room-image"
+          src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png"
+          alt="Dobbeltrom med sjøutsikt"
+        />
 
-                <div class="booking-content">
-                    <div class="booking-top">
-                        <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
-                        <span class="status">Fullført</span>  
-                    </div> 
+        <div class="booking-content">
+          <div class="booking-top">
+            <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
+            <span class="status">Fullført</span>
+          </div>
 
-                    <div class="dates">
-                        <div class="date-item">
-                            <div class="date-label">Innsjekk</div>
-                            <div class="date-value">Lør, 10. sep</div>
-                        </div>
-                        <div class="date-item">
-                            <div class="date-label">Utsjekk</div>
-                            <div class="date-value">Søn, 11. sep</div>
-                        </div>
-                    </div>
+          <div class="dates">
+            <div class="date-item">
+              <div class="date-label">Innsjekk</div>
+              <div class="date-value">Lør, 10. sep 2025</div>
+            </div>
+            <div class="date-item">
+              <div class="date-label">Utsjekk</div>
+              <div class="date-value">Søn, 11. sep 2025</div>
+            </div>
+          </div>
 
-                    <hr class="divider">
+          <hr class="divider" />
 
-                    <div class="review-box has-review">
-                        <div class="review-content">
-                            <span class="review-label">Din anmeldelse</span>
-                            <span class="stars" aria-label="5 av 5 stjerner">★★★★★</span>
-                        </div>
-                        <p class="review-text">Veldig hyggelig opphold og god frokost!</p>
+          <div class="review-box has-review">
+            <div class="review-content">
+              <span class="review-label">Din anmeldelse</span>
+              <span class="stars" aria-label="5 av 5 stjerner">★★★★★</span>
+            </div>
+            <p class="review-text">Veldig hyggelig opphold og god frokost!</p>
 
-                        <div class="review-actions">
-                            <button class="btn-edit">Rediger anmeldelse</button>
-                            <button class="btn-delete">Slett anmeldelse</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </li>
+            <div class="review-actions">
+              <button class="btn-edit">
+                <i class="fa-regular fa-pen-to-square"></i>Rediger anmeldelse
+              </button>
+              <button class="btn-delete">
+                <i class="fa-regular fa-trash-can"></i>Slett anmeldelse
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
     </section>
   </body>
 </html>
