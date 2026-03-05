@@ -18,3 +18,9 @@ nav {
   height: 60px;
   width: auto;
 }
+
+/* icons */
+
+.fa-regular {
+  padding: 6px;
+}
