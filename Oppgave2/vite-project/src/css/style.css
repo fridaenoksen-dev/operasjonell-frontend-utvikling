@@ -20,13 +20,15 @@ nav {
 
 .logo {
   width: auto;
+  height: 60px;
 }
 
 a {
   color: #b82424;
   text-decoration: none;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  font-style: normal;
 }
 
 h1 {
@@ -49,11 +51,5 @@ h3 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
-}
-
-p {
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
