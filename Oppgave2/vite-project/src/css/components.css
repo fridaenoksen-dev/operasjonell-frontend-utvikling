@@ -1,25 +1,33 @@
-/* Top navigasjon */
-
-nav {
-  padding: 12px 16px;
-  color: #333;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-container {
-  margin-right: auto;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-}
-
 /* icons */
 
 .fa-regular {
   padding: 6px;
+}
+
+/* btn */
+
+.btn-delete {
+  color: #dc3545;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #b55a4a;
+  border-radius: 999px;
+  padding: 6px 12px;
+  color: #f4edeb;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #b55a4a;
+  border-radius: 999px;
+  padding: 6px 12px;
+  color: #b55a4a;
+  cursor: pointer;
 }
