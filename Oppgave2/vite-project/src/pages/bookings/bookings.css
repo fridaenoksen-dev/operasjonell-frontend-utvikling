@@ -4,6 +4,8 @@ body {
 
 .booking-list {
   padding: 24px 16px;
+  display: grid;
+  gap: 24px;
 }
 
 .card-list {
@@ -140,21 +142,6 @@ body {
   gap: 10px;
   align-items: flex-end;
   padding: 12px;
-}
-
-.btn-delete {
-  color: #dc3545;
-  background: none;
-  border: none;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.btn-edit {
-  background: none;
-  border: none;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .history-card {
