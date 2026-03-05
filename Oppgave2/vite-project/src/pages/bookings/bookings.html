@@ -13,10 +13,14 @@
       rel="stylesheet"
       href="/Oppgave2/vite-project/src/css/components.css"
     />
+    <link rel="stylesheet" href="/Oppgave2/vite-project/src/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Mine bookinger</title>
   </head>
   <body>
@@ -50,18 +54,22 @@
 
           <div class="booking-content">
             <div class="booking-top">
-              <h2 class="room-name">Dobbeltrom med sjøutsikt</h2>
+              <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
               <div class="status"><span>Bekreftet</span></div>
             </div>
 
             <div class="dates">
               <div class="date-item">
                 <div class="date-label">Innsjekk</div>
-                <div class="date-value">Lør, 10. sep</div>
+                <div class="date-value">
+                  <i class="fa-regular fa-calendar"></i>Lør, 10. sep 2025
+                </div>
               </div>
               <div class="date-item">
                 <div class="date-label">Utsjekk</div>
-                <div class="date-value">Søn, 11. sep</div>
+                <div class="date-value">
+                  <i class="fa-regular fa-calendar"></i>Søn, 11. sep 2025
+                </div>
               </div>
             </div>
 
@@ -75,7 +83,7 @@
 
             <div class="booking-bottom">
               <div class="price">
-                <div class="price-label">Totalt:</div>
+                <div class="price-label">Totalt</div>
                 <div class="price-value">9 999,95 NOK</div>
 
                 <div class="meta">
@@ -115,11 +123,15 @@
           <div class="dates">
             <div class="date-item">
               <div class="date-label">Innsjekk</div>
-              <div class="date-value">Lør, 10. sep 2025</div>
+              <div class="date-value">
+                <i class="fa-regular fa-calendar"></i>Lør, 10. sep 2025
+              </div>
             </div>
             <div class="date-item">
               <div class="date-label">Utsjekk</div>
-              <div class="date-value">Søn, 11. sep 2025</div>
+              <div class="date-value">
+                <i class="fa-regular fa-calendar"></i>Søn, 11. sep 2025
+              </div>
             </div>
           </div>
 
@@ -143,6 +155,45 @@
           </div>
         </div>
       </li>
+      <li class="booking-card history-card">
+        <img
+          class="room-image"
+          src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png"
+          alt="Dobbeltrom med sjøutsikt"
+        />
+
+        <div class="booking-content">
+          <div class="booking-top">
+            <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
+            <span class="status">Fullført</span>
+          </div>
+
+          <div class="dates">
+            <div class="date-item">
+              <div class="date-label">Innsjekk</div>
+              <div class="date-value">
+                <i class="fa-regular fa-calendar"></i>Lør, 10. sep 2025
+              </div>
+            </div>
+            <div class="date-item">
+              <div class="date-label">Utsjekk</div>
+              <div class="date-value">
+                <i class="fa-regular fa-calendar"></i>Søn, 11. sep 2025
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="review-box no-review">
+            <div class="review-head">
+                <span class="review-label">Del din opplevelse med andre besøkende!</span>
+            </div>
+            <div class="review-actions">
+              <button class="btn-edit">
+                <i class="fa-regular fa-pen-to-square"></i>Skriv en anmeldelse
+                </button>
+          </div>
     </section>
   </body>
 </html>
