@@ -46,6 +46,10 @@ body {
   color: white;
 }
 
+.status-completed {
+  background: #28a745;
+}
+
 .room-image {
   width: 310px;
   object-fit: cover;
@@ -163,7 +167,7 @@ body {
   border: 1px solid #eee;
   border-radius: 12px;
   padding: 12px;
-  background: #fafafa;
+  background: #fefef7;
 }
 
 .review-head {
@@ -182,4 +186,10 @@ body {
   margin: 0 0 12px;
   color: #333;
   line-height: 1.4;
+}
+
+.review-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
 }
