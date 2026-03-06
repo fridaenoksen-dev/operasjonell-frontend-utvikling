@@ -40,7 +40,8 @@
 }
 
 .btn-review {
-  margin-bottom: 24px;
-  align-self: center;
+  margin-bottom: var(--s-4);
+  margin-left: var(--s-2);
   padding: 12px 24px;
+  align-self: flex-start;
 }
