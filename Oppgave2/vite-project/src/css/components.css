@@ -7,7 +7,7 @@
 /* btn */
 
 .btn-delete {
-  color: #dc3545;
+  color: #b23a32;
   background: none;
   border: none;
   text-decoration: underline;
@@ -22,19 +22,25 @@
 }
 
 .btn-primary {
-  background: #b55a4a;
+  background: #b23a32;
   border-radius: 999px;
   padding: 6px 12px;
-  color: #f4edeb;
+  color: #f9f9f9;
   border: none;
   cursor: pointer;
 }
 
 .btn-secondary {
   background: none;
-  border: 1px solid #b55a4a;
+  border: 1px solid #b23a32;
   border-radius: 999px;
   padding: 6px 12px;
-  color: #b55a4a;
+  color: #b23a32;
   cursor: pointer;
+}
+
+.btn-review {
+  margin-bottom: 24px;
+  align-self: center;
+  padding: 12px 24px;
 }

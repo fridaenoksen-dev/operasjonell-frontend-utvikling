@@ -1,7 +1,18 @@
+:root {
+  --s-1: 8px;
+  --s-2: 16px;
+  --s-3: 24px;
+  --s-4: 32px;
+}
+
 body {
-  max-width: 1200px;
   margin: 0 auto;
-  background: #fefef7;
+  max-width: 1200px;
+  background: #fbf6f1;
+}
+
+section {
+  margin-bottom: var(--s-4);
 }
 
 nav {
@@ -10,8 +21,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
-  border-bottom: #b82424 1px solid;
+  gap: var(--s-2);
+  border-bottom: #7a1f1b 1px solid;
 }
 
 .logo-container {
@@ -24,7 +35,7 @@ nav {
 }
 
 a {
-  color: #b82424;
+  color: #7a1f1b;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -32,24 +43,42 @@ a {
 }
 
 h1 {
-  color: #b82424;
+  color: #7a1f1b;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
+  font-size: 42px;
+  font-weight: 700;
   font-style: normal;
+  margin: var(--s-4) 0 var(--s-3);
 }
 
 h2 {
-  color: #b82424;
+  color: #7a1f1b;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 24px;
   font-weight: 600;
   font-style: normal;
+  border-left: 4px solid #b23a32;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: var(--s-4) 0 var(--s-2);
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 20px;
   font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #333;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }

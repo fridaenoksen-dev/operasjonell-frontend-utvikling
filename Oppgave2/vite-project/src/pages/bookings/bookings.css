@@ -1,53 +1,49 @@
-body {
-  background: #f4edeb;
-}
-
 .booking-list {
-  padding: 24px 16px;
+  padding: var(--s-3);
   display: grid;
-  gap: 24px;
+  gap: var(--s-2);
+  background: #fefefe;
+  border-radius: var(--s-3);
 }
 
 .card-list {
   list-style: none;
-  padding: 0;
+  padding: var(--s-3);
   margin: 0;
   display: grid;
-  gap: 18px;
+  gap: var(--s-2);
 }
 
 .booking-card {
   display: flex;
-  gap: 18px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
+  gap: var(--s-2);
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-4);
   align-items: stretch;
   background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .booking-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  padding-right: 16px;
+  gap: var(--s-2);
+  padding-right: var(--s-3);
 }
 
 .room-name {
   font-size: 22px;
 }
 
-.status {
+.status-confirmed {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 6px 12px;
   border-radius: 999px;
-  font-size: 14px;
-  background: #444;
-  color: white;
-}
-
-.status-completed {
-  background: #28a745;
+  background: #e7f4ea;
+  color: #2e7d32;
 }
 
 .room-image {
@@ -65,8 +61,8 @@ body {
 
 .dates {
   display: flex;
-  gap: 20px;
-  margin-top: 14px;
+  gap: var(--s-2);
+  margin-top: var(--s-4);
   align-items: start;
 }
 
@@ -74,15 +70,20 @@ body {
   min-width: 0;
 }
 
-.date-label {
-  font-size: 12px;
+.date-label,
+.price-label,
+.history-label {
   color: #666;
   margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .date-value {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .divider {
@@ -93,7 +94,7 @@ body {
 
 .features {
   display: flex;
-  gap: 10px;
+  gap: var(--s-2);
   flex-wrap: wrap;
   margin-bottom: 14px;
 }
@@ -106,52 +107,46 @@ body {
 }
 
 .booking-bottom {
-  margin-top: auto;
+  margin-top: var(--s-4);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 12px;
-  padding-bottom: 12px;
+  gap: var(--s-2);
+  padding-bottom: var(--s-3);
 }
 
 .price {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
-}
-
-.price-label {
-  font-size: 12px;
-  color: #444;
+  gap: var(--s-2);
 }
 
 .price-value {
   font-weight: bold;
   font-size: 18px;
-  margin-top: 6px;
+  margin-top: var(--s-4);
 }
 
 .meta {
-  margin-top: 10px;
+  margin-top: var(--s-4);
   font-size: 12px;
   color: #666;
   display: grid;
-  gap: 6px;
+  gap: var(--s-2);
 }
 
 .actions {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--s-2);
   align-items: flex-end;
   padding: 12px;
 }
 
 .history {
-  max-width: 980px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: var(--s-3);
 }
 
 .history-grid {
@@ -160,23 +155,24 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 26px;
+  gap: var(--s-3);
 }
 
 .history-card {
   background: #fff;
-  border-radius: 18px;
+  border-radius: 12px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  border: 1px solid #666;
+  gap: var(--s-2);
+  border: 1px solid #e8ded5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .history-img {
   height: 220px;
   object-fit: cover;
-  border-radius: 18px 18px 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 .history-title {
@@ -185,15 +181,13 @@ body {
 }
 
 .history-dates {
-  margin: 0 16px;
+  margin: 0 16px 12px;
   font-size: 14px;
   color: #666;
 }
 
 .history-label {
-  margin: 0 16px 12px;
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0 16px;
 }
 
 .stars {
@@ -206,34 +200,35 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
-  line-height: 1;
-  padding: 0;
+  margin: 0 0 16px 0;
 }
 
 .stars-display {
-  margin: 0 16px;
+  margin: 0 16px 16px;
 }
 
 .review-textarea {
-  margin: 0 16px 12px;
-  width: calc(100% - 32px);
+  margin: 0 16px 16px;
+  padding: var(--s-3);
   background: #f4edeb;
   height: 80px;
-  padding: 8px;
   border-radius: 12px;
   border: none;
   resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
 }
 
 .history-review {
-  margin: 0 16px 12px;
+  margin: 0 16px 0 16px;
   background: #f4edeb;
   border-radius: 12px;
-  padding: 8px;
+  padding: var(--s-3);
 }
 
 .history-actions {
-  margin: 8px;
+  margin: var(--s-2);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: var(--s-2);
 }

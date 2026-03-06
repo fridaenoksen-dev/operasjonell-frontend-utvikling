@@ -18,15 +18,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <title>Mine bookinger</title>
   </head>
-  <body>
+  <body class="container">
     <nav>
       <div class="logo-container">
         <a href="index.html"
@@ -60,7 +57,7 @@
           <div class="booking-content">
             <div class="booking-top">
               <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
-              <div class="status"><span>Bekreftet</span></div>
+              <span class="status-confirmed">Bekreftet</span>
             </div>
 
             <div class="dates">
@@ -147,14 +144,14 @@
             </button>
           </div>
 
-          <p class="history-label" for="review">Legg med en kommentar</p>
+          <p class="history-label" for="review">Legg gjerne ved en kommentar</p>
           <textarea
             id="review"
             class="review-textarea"
-            placeholder="Skriv din anmeldelse her..."
+            placeholder="Oppholdet var..."
           ></textarea>
 
-          <button class="btn-primary">Gi anmeldelse</button>
+          <button class="btn-primary btn-review">Send inn anmeldelse</button>
         </li>
 
         <!-- Kort B: Har anmeldelse -->
