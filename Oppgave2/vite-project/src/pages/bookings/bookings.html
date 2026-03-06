@@ -18,10 +18,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
-<title>Mine bookinger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mine bookinger</title>
   </head>
   <body>
     <nav>
@@ -41,6 +44,8 @@
     </nav>
 
     <h1>Mine bookinger</h1>
+
+    <!-- Kommende bookinger -->
 
     <section class="booking-list" aria-label="Mine bookinger">
       <h2>Kommende reiser</h2>
@@ -105,95 +110,79 @@
         </li>
       </ul>
     </section>
-    <section class="booking-list" aria-label="Tidligere besøk">
-      <h2>Tidligere besøk</h2>
-      <li class="booking-card history-card">
-        <img
-          class="room-image"
-          src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png"
-          alt="Dobbeltrom med sjøutsikt"
-        />
 
-        <div class="booking-content">
-          <div class="booking-top">
-            <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
-            <span class="status status-completed">Fullført</span>
+    <!-- Tidligere bookinger -->
+
+    <section class="history" aria-label="Tidligere turer">
+      <h2>Tidligere turer</h2>
+
+      <ul class="history-grid">
+        <!-- Kort A: Ingen anmeldelse -->
+        <li class="history-card">
+          <div class="history-img"></div>
+
+          <h3 class="history-title">Dobbelrom med sjøutsikt</h3>
+          <p class="history-dates">Lør, 10. sep 2025 til Søn, 11. sep 2025</p>
+          <p class="history-label">Hvordan var besøket?</p>
+
+          <div class="stars" aria-label="Velg stjerner">
+            <button class="star-btn" aria-label="1 stjerne">
+              <i class="fa-regular fa-star"></i>
+            </button>
+            <button class="star-btn" aria-label="2 stjerner">
+              <i class="fa-regular fa-star"></i>
+            </button>
+            <button class="star-btn" aria-label="3 stjerner">
+              <i class="fa-regular fa-star"></i>
+            </button>
+            <button class="star-btn" aria-label="4 stjerner">
+              <i class="fa-regular fa-star"></i>
+            </button>
+            <button class="star-btn" aria-label="5 stjerner">
+              <i class="fa-regular fa-star"></i>
+            </button>
           </div>
 
-          <div class="dates">
-            <div class="date-item">
-              <div class="date-label">Innsjekk</div>
-              <div class="date-value">
-                <i class="fa-regular fa-calendar"></i>Lør, 10. sep 2025
-              </div>
-            </div>
-            <div class="date-item">
-              <div class="date-label">Utsjekk</div>
-              <div class="date-value">
-                <i class="fa-regular fa-calendar"></i>Søn, 11. sep 2025
-              </div>
-            </div>
+          <p class="history-label" for="review">Legg med en kommentar</p>
+          <textarea
+            id="review"
+            class="review-textarea"
+            placeholder="Skriv din anmeldelse her..."
+          ></textarea>
+
+          <button class="btn-primary">Gi anmeldelse</button>
+        </li>
+
+        <!-- Kort B: Har anmeldelse -->
+        <li class="history-card">
+          <div class="history-img"></div>
+
+          <h3 class="history-title">Dobbelrom med sjøutsikt</h3>
+          <p class="history-dates">Lør, 10. sep 2025 til Søn, 11. sep 2025</p>
+          <p class="history-label">Din vurdering</p>
+
+          <div class="stars-display" aria-label="5 av 5 stjerner">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
 
-          <hr class="divider" />
-
-          <div class="review-box has-review">
-            <div class="review-content">
-              <span class="review-label">Din anmeldelse</span>
-              <span class="stars" aria-label="5 av 5 stjerner">★★★★★</span>
-            </div>
-            <p class="review-text">Veldig hyggelig opphold og god frokost!</p>
-
-            <div class="review-actions">
-              <button class="btn-secondary">
-                <i class="fa-regular fa-pen-to-square"></i>Rediger anmeldelse
-              </button>
-              <button class="btn-delete">
-                <i class="fa-regular fa-trash-can"></i>Slett anmeldelse
-              </button>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="booking-card history-card">
-        <img
-          class="room-image"
-          src="/Oppgave2/vite-project/src/assets/images/dobbeltromSjoutsikt.png"
-          alt="Dobbeltrom med sjøutsikt"
-        />
-
-        <div class="booking-content">
-          <div class="booking-top">
-            <h3 class="room-name">Dobbeltrom med sjøutsikt</h3>
-            <span class="status status-completed">Fullført</span>
+          <div class="history-review">
+            Veldig hyggelig opphold og god frokost!
           </div>
 
-          <div class="dates">
-            <div class="date-item">
-              <div class="date-label">Innsjekk</div>
-              <div class="date-value">
-                <i class="fa-regular fa-calendar"></i>Lør, 10. sep 2025
-              </div>
-            </div>
-            <div class="date-item">
-              <div class="date-label">Utsjekk</div>
-              <div class="date-value">
-                <i class="fa-regular fa-calendar"></i>Søn, 11. sep 2025
-              </div>
-            </div>
+          <div class="history-actions">
+            <button class="btn-edit">
+              <i class="fa-regular fa-pen-to-square"></i>Rediger anmeldelse
+            </button>
+            <button class="btn-delete">
+              <i class="fa-regular fa-trash-can"></i>Slett anmeldelse
+            </button>
           </div>
-
-          <hr class="divider" />
-
-          <div class="review-box no-review">
-            <div class="review-head">
-                <span class="review-label">Del din opplevelse med andre besøkende!</span>
-            </div>
-            <div class="review-actions">
-              <button class="btn-primary">
-                <i class="fa-regular fa-pen-to-square"></i>Skriv en anmeldelse
-                </button>
-          </div>
+        </li>
+      </ul>
     </section>
   </body>
 </html>
