@@ -181,18 +181,18 @@
 }
 
 .history-dates {
-  margin: 0 16px 12px;
+  margin-left: var(--s-2);
   font-size: 14px;
   color: #666;
 }
 
 .history-label {
-  margin: 0 16px;
+  margin-left: var(--s-2);
 }
 
 .stars {
   display: flex;
-  margin: 0 16px;
+  margin-left: var(--s-2);
 }
 
 .star-btn {
@@ -204,11 +204,12 @@
 }
 
 .stars-display {
-  margin: 0 16px 16px;
+  margin-left: var(--s-2);
 }
 
 .review-textarea {
-  margin: 0 16px 16px;
+  margin-left: var(--s-2);
+  margin-right: var(--s-2);
   padding: var(--s-3);
   background: #f4edeb;
   height: 80px;
@@ -216,7 +217,7 @@
   border: none;
   resize: none;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .history-review {
