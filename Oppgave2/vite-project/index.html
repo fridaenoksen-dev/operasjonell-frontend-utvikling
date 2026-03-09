@@ -2,14 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
+    <link rel="stylesheet" href="Dastan.css" />
+    <title>Stay - Bed and Breakfast</title>
+
+
   </head>
   <body>
-    <div id="app">
-      <h2>Hello World</h2>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <header>
+      <div class="Logo"><h1>Stay</h1></div>
+      <nav>
+        <a href="Hjem.html">Hjem</a>
+        <a href="Booking.html">Booking</a>
+      
+
+      </nav>
+      <div class="push-buttons">
+        <button class="Logg-inn">Logg inn</button>
+        <button class="registrer">registrer</button>
+      </div>
+    </header>
+
+
+    <main>
+      <h2>Finn ditt rom</h2>
+      <p class="intro"> Velg blant våre beste rom med spektakulære utsikt</p>
+
+      <div class="innhold-container">
+        <div class="rom-liste">
+          
+<!-- rom 1 -->
+         <div class="rom-kort">
+            <div class="rom-innhold">
+              <h3> Rom 1 - Enkeltrom</h3>
+               <img src="assets/a334652557f68dec6eb6f28fe282deae2cc4064e.jpg" alt="Enkeltrom" class="rom-bilde">
+              <p class="rom-info">
+                Nyt den fantastiske utsikten over havet fra vårt romslige enkeltrom. Perfekt for deg som ønsker en rolig opphold.</p>
+                <div class="rom-detaljer">
+                  <h4>Fasiliteter</h4>
+                  <ul class="Fasiliteter-liste">
+                  <li>👤 1 person</li>
+                  <li>🛏️  Enkeltseng</li>
+                  <li>🚿 Eget bad</li>
+                  <li>📺Tv og Wifi</li>
+                  </ul>
+                </div>
+                <p class="rom-pris">1600 kr/natt</p>
+                <button class="søke-knapp">Book Rom</button>
+      </div>
+      </div>
+
+<!-- rom 2 -->
+
+           <div class="rom-kort">
+            <div class="rom-innhold">
+              <h3> Rom 2 - Dobbeltrom</h3>
+              <img src="assets/409b41f1913d8a8d98522372f41670fe54fe83b0.jpg" alt="Dobbeltrom" class="rom-bilde">
+              <p class="rom-info">
+                Nyt den fantastiske utsikten over havet fra vårt romslige dobbelrom. Perfekt for par som ønsker romantisk opplevelse</p>
+                <div class="rom-detaljer">
+                  <h4>Fasiliteter</h4>
+                  <ul class="Fasiliteter-liste">
+                  <li>👤👤 2 person</li>
+                  <li>🛏️ Dobbeltseng</li>
+                  <li>🚿 Eget bad</li>
+                  <li>📺 Tv og Wifi</li>
+                  </ul>
+                </div>
+                <p class="rom-pris">2600 kr/natt</p>
+                <button class="søke-knapp">Book Rom</button>
+      </div>
+      </div>
+
+      </div>
+
+      <div class="søk-seksjon">
+        <h2> Søk etter ledig rom</h2>
+        <form id="søke-form">
+          <div class="søke-rad">
+            <div class="søke-felt">
+              <label for="innsjekk">Innsjekk</label>
+              <input type="date" id="innsjekk" required>
+            </div>
+      </div>
+
+
+<div class="søke-felt">
+  <label for="Utsjekk">Utsjekk</label>
+  <input type="date" id="Utsjekk" required>
+</div>
+
+
+<div class="søke-felt">
+  <label for="antall-personer">Antall-personer</label>
+  <select id="antall-personer">
+  <option value="1">1 person</option>
+  <option value="2">2 person</option>
+  <option value="3">3 person</option>
+</select>
+</div>
+
+
+<div class="søke-felt">
+  <button type="submit" class="søke-knapp">Søk</button>
+</div>
+
+   </div>
+
+ </form>
+
+  </div>
+
+ </div>
+ 
+
+</main>
+
+
+<footer>
+  <p>© 2026 Stay - Bed and Breakfast</p>
+</footer>
+
+<script type="module" src="Dastan.js"></script>
+</body>
 </html>
