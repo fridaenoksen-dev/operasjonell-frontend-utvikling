@@ -9,6 +9,8 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   background: #fbf6f1;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
 }
 
 section {
@@ -81,11 +83,4 @@ button {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-price {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  color: #333;
 }
