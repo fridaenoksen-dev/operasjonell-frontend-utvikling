@@ -82,3 +82,10 @@ button {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+price {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #333;
+}

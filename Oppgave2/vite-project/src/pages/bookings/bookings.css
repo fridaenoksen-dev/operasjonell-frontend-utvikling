@@ -123,8 +123,9 @@
 }
 
 .price-value {
+  font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: var(--s-4);
 }
 
