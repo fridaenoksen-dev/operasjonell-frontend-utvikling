@@ -132,7 +132,6 @@
 
 .meta {
   margin-top: var(--s-2);
-  font-size: 12px;
   color: #666;
   display: grid;
   gap: var(--s-2);
@@ -214,10 +213,12 @@
   resize: none;
   font-family: "Inter", sans-serif;
   font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .history-review {
-  margin: 0 16px 0 16px;
+  margin-left: var(--s-2);
+  margin-right: var(--s-2);
   background: #f4edeb;
   border-radius: 12px;
   padding: var(--s-3);
@@ -228,4 +229,39 @@
   display: flex;
   justify-content: flex-start;
   gap: var(--s-2);
+}
+
+@media screen and (max-width: 610px) {
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .booking-content {
+    padding: var(--s-3);
+  }
+
+  .booking-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    align-items: flex-start;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
 }
