@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;600;700&display=swap");
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "inter", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4edeb;
+  background-color: #fbf6f1;
 }
 
 header {
-  background-color: #b55a4a;
+  background-color: #7a1f1b;
   color: white;
   padding: 15px 40px;
   display: flex;
@@ -14,9 +16,9 @@ header {
   align-items: center;
 }
 
-.logo h1 {
+.logo {
   margin: 0;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 nav {
@@ -45,32 +47,34 @@ nav a:hover {
 
 .logg-inn {
   background-color: white;
-  color: #b55a4a;
+  color: #7a1f1b;
   border: 3px solid white;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 15px;
+  font-family: "inter", sans-serif;
 }
 
 .logg-inn:hover {
   background-color: white;
-  color: #b55a4a;
+  color: #7a1f1b;
 }
 
 .registrer {
   background-color: white;
-  color: #b55a4a;
+  color: #7a1f1b;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
   font-size: 15px;
+  font-family: "inter", sans-serif;
 }
 .registrer:hover {
   background-color: white;
-  color: #b55a4a;
+  color: #7a1f1b;
 }
 
 main {
@@ -82,7 +86,8 @@ main {
 }
 
 h2 {
-  color: #b55a4a;
+  color: #7a1f1b;
+  font-family: "montserrat", sans-serif;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 15px;
@@ -90,9 +95,10 @@ h2 {
 
 .intro {
   text-align: center;
-  color: #b55a4a;
+  color: #7a1f1b;
   margin-bottom: 30px;
   font-size: 20px;
+  font-family: "inter", sans-serif;
 }
 
 .innhold-container {
@@ -113,9 +119,10 @@ h2 {
   margin-top: auto;
 }
 .søke-seksjon h2 {
-  color: #b55a4a;
+  color: #7a1f1b;
   margin: 0 0 20px 0;
   font-size: 2rem;
+  font-family: "montserrat", sans-serif;
 }
 
 .søke-rad {
@@ -129,31 +136,34 @@ h2 {
 }
 .søke-felt label {
   display: block;
-  color: #b55a4a;
+  color: #7a1f1b;
   font-weight: bold;
   margin-bottom: 8px;
   font-size: 14px;
+  font-family: "inter", sans-serif;
 }
 .søke-felt input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #b55a4a;
+  border: 2px solid #b23a32;
   border-radius: 5px;
   font-size: 15px;
   box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
 }
 .søke-felt select {
   width: 100%;
   padding: 10px;
-  border: 2px solid #b55a4a;
+  border: 2px solid #b23a32;
   border-radius: 5px;
   font-size: 15px;
   box-sizing: border-box;
+  font-family: "inter", sans-serif;
 }
 
 .søke-felt input:focus {
   outline: none;
-  border-color: #b55a4a;
+  border-color: #b23a32;
 }
 .søke-felt select:focus {
   outline: none;
@@ -161,8 +171,8 @@ h2 {
 }
 
 .bestille-knapp {
-  background-color: #b55a4a;
-  color: white;
+  background-color: #b23a32;
+  color: #f9f9f9;
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
@@ -171,10 +181,11 @@ h2 {
   font-weight: bold;
   width: 100%;
   margin-top: 5px;
+  font-family: "inter", sans-serif;
 }
 
 .bestille-knapp:hover {
-  background-color: #b55a4a;
+  background-color: #b23a32;
 }
 
 .rom-liste {
@@ -189,7 +200,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 5px black;
   overflow: hidden;
-  border-right: 5px solid #b55a4a;
+  border-right: 5px solid #b23a32;
 }
 
 .rom-innhold {
@@ -197,27 +208,29 @@ h2 {
 }
 
 .rom-kort h3 {
-  color: #b55a4a;
+  color: #7a1f1b;
   margin: 0 0 10px 0;
   font-size: 2rem;
 }
 .rom-info {
-  color: #b55a4a;
+  color: #333;
   margin: 15px 0;
   line-height: 2;
+  font-family: "inter", sans-serif;
 }
 .rom-pris {
   font-size: 30px;
-  color: #b55a4a;
+  color: #7a1f1b;
   font-weight: bold;
   margin: 20px 0;
+  font-family: "montserrat", sans-serif;
 }
 .rom-detaljer {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
-  border-left: 5px solid #b55a4a;
+  border-left: 5px solid #b23a32;
 }
 .detalj {
   display: block;
@@ -232,7 +245,7 @@ h2 {
 }
 
 .søke-knapp {
-  background-color: #b55a4a;
+  background-color: #b23a32;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -240,10 +253,11 @@ h2 {
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
+  font-family: "inter", sans-serif;
   margin-top: 20px;
 }
 .søke-knapp:hover:hover {
-  background-color: #b55a4a;
+  background-color: #b23a32;
 }
 
 footer {
