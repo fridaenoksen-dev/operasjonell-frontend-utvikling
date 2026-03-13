@@ -6,7 +6,8 @@
   border-radius: var(--s-3);
 }
 
-.card-list {
+.card-list,
+.history {
   list-style: none;
   padding: var(--s-3);
   margin: 0;
@@ -61,7 +62,7 @@
 
 .dates {
   display: flex;
-  gap: var(--s-2);
+  gap: var(--s-4);
   margin-top: var(--s-4);
   align-items: start;
 }
@@ -82,7 +83,7 @@
 }
 
 .date-value {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -126,12 +127,11 @@
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 16px;
-  margin-top: var(--s-4);
+  margin-top: var(--s-1);
 }
 
 .meta {
-  margin-top: var(--s-4);
-  font-size: 12px;
+  margin-top: var(--s-2);
   color: #666;
   display: grid;
   gap: var(--s-2);
@@ -143,11 +143,6 @@
   gap: var(--s-2);
   align-items: flex-end;
   padding: 12px;
-}
-
-.history {
-  margin: 0 auto;
-  padding: var(--s-3);
 }
 
 .history-grid {
@@ -162,7 +157,6 @@
 .history-card {
   background: #fff;
   border-radius: 12px;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: var(--s-2);
@@ -178,7 +172,6 @@
 
 .history-title {
   margin: 6px 16px 0;
-  font-size: 18px;
 }
 
 .history-dates {
@@ -201,7 +194,6 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  margin: 0 0 16px 0;
 }
 
 .stars-display {
@@ -219,10 +211,12 @@
   resize: none;
   font-family: "Inter", sans-serif;
   font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .history-review {
-  margin: 0 16px 0 16px;
+  margin-left: var(--s-2);
+  margin-right: var(--s-2);
   background: #f4edeb;
   border-radius: 12px;
   padding: var(--s-3);
@@ -233,4 +227,39 @@
   display: flex;
   justify-content: flex-start;
   gap: var(--s-2);
+}
+
+@media screen and (max-width: 610px) {
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .booking-content {
+    padding: var(--s-3);
+  }
+
+  .booking-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    align-items: flex-start;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
 }

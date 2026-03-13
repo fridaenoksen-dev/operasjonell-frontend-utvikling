@@ -42,6 +42,7 @@
 .btn-review {
   margin-bottom: var(--s-4);
   margin-left: var(--s-2);
+  margin-top: var(--s-1);
   padding: 12px 24px;
   align-self: flex-start;
 }

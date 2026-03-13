@@ -33,11 +33,23 @@
             alt="Stay Logo"
         /></a>
       </div>
-      <a href="index.html">Romliste</a>
-      <a href="bookings.html">Mine bookinger</a>
-      <a href="userProfile.html">Min profil</a>
-      <a href="login.html"></a>
-      <a><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+
+      <!-- Navigasjon IKKE innlogget -->
+      <div class="nav-guest">
+        <a href="index.html">Romliste</a>
+        <button class="btn-primary">Logg inn</button>
+      </div>
+
+      <!-- Navigasjon innlogget -->
+      <div class="nav-user" style="display: none">
+        <a href="index.html">Romliste</a>
+        <a href="bookings.html">Mine bookinger</a>
+        <a href="userProfile.html">Min profil</a>
+        <a href="login.html"></a>
+        <button class="btn-logout">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+      </div>
     </nav>
 
     <h1>Mine bookinger</h1>
@@ -124,7 +136,7 @@
 
           <h3 class="history-title">Dobbelrom med sjøutsikt</h3>
           <p class="history-dates">Lør, 10. sep til Søn, 11. sep 2025</p>
-          <p class="history-label">Hvordan var besøket?</p>
+          <p class="history-label">Hvordan var oppholdet?</p>
 
           <div class="stars" aria-label="Velg stjerner">
             <button class="star-btn" aria-label="1 stjerne">
@@ -144,11 +156,13 @@
             </button>
           </div>
 
-          <p class="history-label" for="review">Legg gjerne ved en kommentar</p>
+          <p class="history-label" for="review">
+            Legg igjen en kommentar (valgfritt)
+          </p>
           <textarea
             id="review"
             class="review-textarea"
-            placeholder="Oppholdet var..."
+            placeholder="Fortell kort hva du likte og hva som kunne vært bedre..."
           ></textarea>
 
           <button class="btn-primary btn-review">Send inn anmeldelse</button>

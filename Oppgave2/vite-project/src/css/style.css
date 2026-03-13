@@ -9,6 +9,8 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   background: #fbf6f1;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
 }
 
 section {
@@ -17,12 +19,18 @@ section {
 
 nav {
   padding: 12px 16px;
-  color: #333;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: var(--s-2);
+  gap: var(--s-3);
   border-bottom: #7a1f1b 1px solid;
+}
+
+.nav-guest {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--s-3);
 }
 
 .logo-container {
@@ -81,11 +89,4 @@ button {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-price {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  color: #333;
 }
