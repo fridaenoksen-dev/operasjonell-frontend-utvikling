@@ -55,15 +55,15 @@
     </header>
 
     <section class="room-section">
-      <section class="room-hero">
+      <div class="room-hero">
         <div class="gallery">
         <div class="gallery-hero">
           <img src="/Oppgave2/vite-project/src/assets/images/rom1/dobbeltromSjoutsikt.png" alt="Romnavn">
        
           <div class="gallery-thumbs">
-            <img class="thumb" src="/Oppgave2/vite-project/src/assets/images/rom1/rombilde1.png" alt="Rombilde 1">
-            <img class="thumb" src="/Oppgave2/vite-project/src/assets/images/rom1/rombilde2.png" alt="Rombilde 2">
-            <img class="thumb" src="/Oppgave2/vite-project/src/assets/images/rom1/rombilde3.png" alt="Rombilde 3">
+            <img src="/Oppgave2/vite-project/src/assets/images/rom1/rombilde1.png" alt="Rombilde 1" class="thumb">
+            <img src="/Oppgave2/vite-project/src/assets/images/rom1/rombilde2.png" alt="Rombilde 2" class="thumb">
+            <img src="/Oppgave2/vite-project/src/assets/images/rom1/rombilde3.png" alt="Rombilde 3" class="thumb"> 
           </div>
         </div>
         </div>
@@ -71,16 +71,15 @@
         <aside class="room-card">
           <div class="roomcard-heading">
           <h1 class="room-title">Dobbeltrom med sjøutsikt</h1>
-           <div class="room-rating" aria-label="5 av 5 stjerner"> 
+           <div class="room-rating" aria-label="4.5 av 5 stjerner"> 
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
             </div>              
            </div>
-          </div>
-          </div>
+         
 
           <div class="room-description">
             <p>
@@ -113,7 +112,7 @@
               </form>
               </div>
         </aside>
-      </section>
+      </div>
 
       <section class="reviews">
         <h2>Anmeldelser</h2>
@@ -122,7 +121,12 @@
           <article class="review-card">
             <div class="review-head">
               <strong>Navn på anmelder</strong>
-              <span class="stars"></span>
+              <span class="stars" aria-label="4 av 5 stjerner">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <p>Kort anmeldelse av rommet.</p>
           </article>
@@ -130,7 +134,13 @@
           <article class="review-card">
             <div class="review-head">
               <strong>Navn på anmelder</strong>
-              <span class="stars"></span>
+              <span class="stars" aria-label="5 av 5 stjerner">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <p>Kort anmeldelse av rommet.</p>
           </article>

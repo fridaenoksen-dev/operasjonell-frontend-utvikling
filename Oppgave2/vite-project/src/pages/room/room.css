@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--s-4);
   align-items: start;
-  margin-top: var(--s-4);
+  margin-top: var(--s-5);
 }
 
 .gallery {
@@ -23,7 +23,7 @@
   gap: var(--s-1);
   align-items: center;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding: var(--s-1) 0 var(--s-1) 0;
 }
 
 .thumb {
@@ -33,9 +33,9 @@
   flex: 0 0 auto;
 }
 
-.thumb img {
-  width: 64px;
-  height: 64px;
+img.thumb {
+  width: auto;
+  height: 150px;
   object-fit: cover;
   border-radius: var(--s-1);
   display: block;
@@ -69,7 +69,7 @@
   margin: var(--s-1) 0 var(--s-1) 0;
   font-family: "Inter", sans-serif;
   font-size: 12px;
-  transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -130,6 +130,10 @@
   border-radius: var(--s-2);
 }
 
+.reviews {
+  margin-top: var(--s-5);
+}
+
 .review-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -155,8 +159,12 @@
     grid-template-columns: 1fr;
   }
 
-  .room-img img {
+  .gallery-hero img {
     height: 280px;
+  }
+
+  img.thumb {
+    height: 80px;
   }
 
   .review-list {

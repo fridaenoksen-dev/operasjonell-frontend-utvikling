@@ -145,6 +145,10 @@
   padding: 12px;
 }
 
+.btn-book {
+  margin-top: var(--s-1);
+}
+
 .history-grid {
   list-style: none;
   padding: 0;
@@ -227,6 +231,11 @@
   display: flex;
   justify-content: flex-start;
   gap: var(--s-2);
+}
+
+.btn-review {
+  margin: var(--s-1) 0 var(--s-4) var(--s-2);
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 610px) {

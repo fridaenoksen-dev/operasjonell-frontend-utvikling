@@ -4,6 +4,11 @@
   padding: 6px;
 }
 
+.fa-star,
+.fa-star-half {
+  color: #ffb700;
+}
+
 /* btn */
 
 .btn-delete {
@@ -24,7 +29,7 @@
 .btn-primary {
   background: #b23a32;
   border-radius: 999px;
-  padding: 6px 12px;
+  padding: 12px 24px;
   color: #f9f9f9;
   border: none;
   cursor: pointer;
@@ -41,11 +46,9 @@
 
 .btn-review {
   margin: var(--s-1) 0 var(--s-4) var(--s-2);
-  padding: 12px 24px;
   align-self: flex-start;
 }
 
 .btn-book {
   margin-top: var(--s-1);
-  padding: 12px 24px;
 }
