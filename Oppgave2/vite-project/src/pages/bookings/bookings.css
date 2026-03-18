@@ -129,7 +129,6 @@
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 16px;
-  margin-top: var(--s-1);
 }
 
 .meta {
@@ -202,10 +201,6 @@
   padding: 0;
 }
 
-.stars-display {
-  margin-left: var(--s-2);
-}
-
 .review-textarea {
   margin-left: var(--s-2);
   margin-right: var(--s-2);
@@ -217,7 +212,6 @@
   resize: none;
   font-family: "Inter", sans-serif;
   font-size: 12px;
-  letter-spacing: 1px;
 }
 
 .history-review {
