@@ -5,6 +5,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/vite-project/src/pages/room/room.css"
+    />
+    <link rel="stylesheet" href="/vite-project/src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <title>Rom</title>
   </head>
   <body>
@@ -13,7 +25,7 @@
         <div class="logo-container">
           <a href="index.html"
             ><img
-              src="/Oppgave2/vite-project/src/assets/images/stayLogo.png"
+              src="/vite-project/src/assets/images/stayLogoVannrett.png"
               class="logo"
               alt="Stay Logo"
           /></a>
@@ -39,11 +51,96 @@
     </header>
 
     <section class="room-section">
-      <h1>Romnavn</h1>
-      <p class="room-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <div class="room-hero">
+        <div class="gallery">
+        <div class="gallery-hero">
+          <img src="/vite-project/src/assets/images/rom1/dobbeltromSjoutsikt.png" alt="Romnavn">
+       
+          <div class="gallery-thumbs">
+            <img src="/vite-project/src/assets/images/rom1/rombilde1.png" alt="Rombilde 1" class="thumb">
+            <img src="/vite-project/src/assets/images/rom1/rombilde2.png" alt="Rombilde 2" class="thumb">
+            <img src="/vite-project/src/assets/images/rom1/rombilde3.png" alt="Rombilde 3" class="thumb"> 
+          </div>
+        </div>
+        </div>
 
+        <aside class="room-card">
+          <div class="roomcard-heading">
+          <h1 class="room-title">Dobbeltrom med sjøutsikt</h1>
+           <div class="room-rating" aria-label="4.5 av 5 stjerner"> 
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>              
+           </div>
+         
+
+          <div class="room-description">
+            <p>
+              Romslig dobbeltrom med utsikt mot havet.
+              </p>
+          </div>
+
+          <div class="roomcard-bottom">
+              <div class="features">
+                <span class="feature">Dobbeltseng</span>
+                <span class="feature">Eget bad</span>
+                <span class="feature">Frokost inkludert</span>
+              </div>
+
+                <div class="room-price">
+            <span class="price-label">Pris per natt</span>
+            <span class="price">kr 1 899 NOK</span>
+          </div>
+        </div>
+              <hr class="divider"/>
+
+              <form class="booking-form">
+                <label class="form-label" for="check-in">Innsjekk</label>
+                <input type="date" id="check-in" name="check-in">
+
+                <label class="form-label" for="check-out">Utsjekk</label>
+                <input type="date" id="check-out" name="check-out">
+
+                <button type="submit" class="btn-primary btn-book">Book nå</button>
+              </form>
+              </div>
+        </aside>
+      </div>
+
+      <section class="reviews">
+        <h2>Anmeldelser</h2>
+
+        <div class="review-list">
+          <article class="review-card">
+            <div class="review-head">
+              <strong>Navn på anmelder</strong>
+              <span class="stars" aria-label="4 av 5 stjerner">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p>Kort anmeldelse av rommet.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-head">
+              <strong>Navn på anmelder</strong>
+              <span class="stars" aria-label="5 av 5 stjerner">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p>Kort anmeldelse av rommet.</p>
+          </article>
+        </div>
+      </section>
   </body>
 </html>

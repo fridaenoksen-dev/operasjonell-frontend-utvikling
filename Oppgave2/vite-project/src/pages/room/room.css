@@ -1,0 +1,175 @@
+/*Frida E. Enoksen*/
+
+.room-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-4);
+  align-items: start;
+  margin-top: var(--s-5);
+}
+
+.gallery {
+  display: grid;
+  gap: var(--s-2);
+}
+.gallery-hero img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: var(--s-3);
+  display: block;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: var(--s-1);
+  align-items: center;
+  overflow-x: auto;
+  padding: var(--s-1) 0 var(--s-1) 0;
+}
+
+.thumb {
+  padding: 0;
+  background: none;
+  border-radius: var(--s-1);
+  flex: 0 0 auto;
+}
+
+img.thumb {
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--s-1);
+  display: block;
+}
+
+.room-card {
+  background: #fefefe;
+  padding: var(--s-3);
+  border-radius: var(--s-1);
+  border: 1px solid #e8ded5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.roomcard-heading {
+  display: grid;
+  align-items: baseline;
+  gap: var(--s-2);
+}
+
+.room-title {
+  margin: 0;
+}
+
+.room-description {
+  padding: var(--s-2) 0 var(--s-1) 0;
+}
+
+.price-label,
+.form-label {
+  color: #666;
+  margin: var(--s-1) 0 var(--s-1) 0;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.roomcard-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--s-2);
+  margin: var(--s-2) 0 var(--s-2) 0;
+}
+
+.room-price {
+  align-self: end;
+  justify-self: end;
+
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--s-1);
+}
+
+.room-price .price {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.feature {
+  background: #f4edeb;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 12px 0;
+}
+
+.booking-form {
+  display: grid;
+  gap: var(--s-2);
+}
+
+.booking-form span {
+  display: block;
+  margin-bottom: var(--s-1);
+}
+
+.booking-form input {
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--s-2);
+}
+
+.reviews {
+  margin-top: var(--s-5);
+}
+
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s-2);
+}
+
+.review-card {
+  background: #fefefe;
+  border-radius: var(--s-4);
+  padding: var(--s-3);
+  border: 1px solid #e8ded5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .room-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-hero img {
+    height: 280px;
+  }
+
+  img.thumb {
+    height: 80px;
+  }
+
+  .review-list {
+    grid-template-columns: 1fr;
+  }
+}

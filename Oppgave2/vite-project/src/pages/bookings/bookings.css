@@ -1,3 +1,5 @@
+/*Frida E. Enoksen*/
+
 .booking-list {
   padding: var(--s-3);
   display: grid;
@@ -127,7 +129,6 @@
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 16px;
-  margin-top: var(--s-1);
 }
 
 .meta {
@@ -143,6 +144,10 @@
   gap: var(--s-2);
   align-items: flex-end;
   padding: 12px;
+}
+
+.btn-book {
+  margin-top: var(--s-1);
 }
 
 .history-grid {
@@ -196,10 +201,6 @@
   padding: 0;
 }
 
-.stars-display {
-  margin-left: var(--s-2);
-}
-
 .review-textarea {
   margin-left: var(--s-2);
   margin-right: var(--s-2);
@@ -211,7 +212,6 @@
   resize: none;
   font-family: "Inter", sans-serif;
   font-size: 12px;
-  letter-spacing: 1px;
 }
 
 .history-review {
@@ -227,6 +227,11 @@
   display: flex;
   justify-content: flex-start;
   gap: var(--s-2);
+}
+
+.btn-review {
+  margin: var(--s-1) 0 var(--s-4) var(--s-2);
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 610px) {
