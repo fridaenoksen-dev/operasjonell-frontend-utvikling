@@ -132,6 +132,10 @@ img.thumb {
   border-radius: var(--s-2);
 }
 
+.btn-book {
+  margin-top: var(--s-1);
+}
+
 .reviews {
   margin-top: var(--s-5);
 }
