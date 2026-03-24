@@ -1,0 +1,112 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: var(--s-5) var(--s-2);
+}
+
+.login-card {
+  background: #fefefe;
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: var(--s-4);
+  width: 100%;
+  max-width: 460px;
+}
+
+/* Faner */
+.tabs {
+  display: flex;
+  margin-bottom: var(--s-4);
+  border-bottom: 2px solid #e8ded5;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding: var(--s-2) var(--s-3);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.tab-btn.active {
+  color: #7a1f1b;
+  border-bottom: 2px solid #b23a32;
+}
+
+/* Skjema-paneler */
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* Skjema */
+.auth-form {
+  display: grid;
+  gap: var(--s-2);
+}
+
+.form-group {
+  display: grid;
+  gap: var(--s-1);
+}
+
+.form-label {
+  color: #666;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input {
+  padding: var(--s-2);
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-2);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background: #fbf6f1;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #b23a32;
+}
+
+.form-hint {
+  color: #999;
+  font-size: 11px;
+  margin: 0;
+}
+
+.btn-full {
+  width: 100%;
+  padding: var(--s-2) var(--s-3);
+  font-size: 14px;
+  margin-top: var(--s-1);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: var(--s-2);
+  color: #666;
+}
+
+.form-footer a {
+  color: #b23a32;
+  text-decoration: underline;
+}
