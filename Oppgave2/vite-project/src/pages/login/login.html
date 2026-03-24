@@ -1,11 +1,164 @@
+<!-- Iben Ravn -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="../../css/style.css" />    
+    <link rel="stylesheet" href="login.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <title>Logg inn/ Registrer</title>
 </head>
 <body>
-    <p>Tester</p>
+  <header>
+    <nav>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="/Oppgave2/vite-project/src/assets/images/stayLogo.png"
+              class="logo"/>
+            </a>
+        </div>
+        <div class="nav-guest">
+            <a href="index.html">Romliste</a>
+        </div>
+    </nav>
+  </header>
+
+  <main class="login-wrapper">
+    <div class="login-card">
+
+        <!-- Faner -->
+        <div class="tabs" role="tablist">
+            <button class="tab-btn active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-login"
+            id="tab-login">
+            Logg inn 
+        </button>
+
+        <button class="tab-btn"
+        role="tab"
+        aria-selected="false"
+        aria-controls="panel-register"
+        id="tab-register">
+        Registrer deg 
+        </button>
+        </div>
+
+        <!-- Panel: Logg inn -->
+          <div class="tab-panel active" id="panel-login" role="tabpanel" aria-labelledby="tab-login">
+            <form class="auth-form" id="form-login" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="login-email">E-post</label>
+                    <input
+                    class="form-input"
+                    type="email"
+                    id="login-email"
+                    name="email"
+                    placeholder="din@epost.no"
+                    autocomplete="email"
+                    required
+                    />
+                </div>
+
+
+            <div class="form-group">
+                <label class="form-label" for="login-password">Passord</label>
+                <input 
+                class="form-input"
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="••••••••"
+                autocomplete="current-password"
+                required
+                />
+            </div>
+
+        <button type="submit" class="btn-primary btn-full">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logg inn
+        </button>
+
+        <p class="form-footer">
+            Har du ikke konto?
+            <a href="#" id="link-to-register">Registrer deg her</a>
+        </p>
+    </form>
+    </div>
+
+<!-- Panel: Registrer -->
+<div class="tab-panel" id="panel-register" role="tabpanel" aria-labelledby="tab-register">
+    <form class="auth-form" id="form-register" novalidate>
+        <div class="form-group">
+            <label class="form-label" for="reg-name">Fullt navn</label>
+            <input
+            class="form-input"
+            type="text"
+            id="reg-name"
+            name="name"
+            placeholder="Ola Nordmann"
+            autocomplete="name"
+            required
+            />
+        </div>
+
+        <div class="form-group">
+        <label class="form-label" for="reg-email">E-post</label>
+        <input
+        class="form-input"
+        type="email"
+        id="reg-email"
+        name="email"
+        placeholder="din@epost.no"
+        autocomplete="email"
+        required
+        />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label" for="reg-password">Passord</label>
+            <input
+            class="form-input"
+            type="password"
+            id="reg-password"
+            name="password"
+            placeholder="••••••••"
+            required
+            />
+            <p class="form-hint">Minst 8 tegn</p>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label" for="reg-password-confirm">Bekreft passord</label>
+            <input
+            class="form-input"
+            type="password"
+            id="reg-password-confirm"
+            name="password-confirm"
+            placeholder="••••••••"
+            autocomplete="new-password"
+            required
+            />
+        </div>
+
+        <button type="submit" class="btn-primary btn-full">
+            <i class="fa-solid fa-user-plus"></i>Opprett konto
+        </button>
+
+        <p class="form-footer">Har du allerede konto?
+            <a href="#" id="link-to-login">Logg inn her</a>
+        </p>
+    </form>
+</div>
+  </main>
+
+  <script src="login.ts"></script>
 </body>
 </html>
