@@ -152,7 +152,11 @@ button {
 footer {
   background-color: #7a1f1b;
   margin-top: 50px;
-  text-align: center;
   height: 150px;
+}
+
+footer p {
+  padding: 75px 0;
+  text-align: center;
   color: #f9f9f9;
 }
