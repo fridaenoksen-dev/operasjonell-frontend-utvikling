@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css" />    
-    <link rel="stylesheet" href="login.css"/>
+    <link rel="stylesheet" href="/src/css/style.css" />    
+    <link rel="stylesheet" href="/src/pages/login/login.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
     <style>
@@ -17,17 +17,33 @@
 </head>
 <body>
   <header>
-    <nav>
+        <nav>
         <div class="logo-container">
-            <a href="index.html">
-                <img src="/Oppgave2/vite-project/src/assets/images/stayLogo.png"
-              class="logo"/>
-            </a>
+          <a href="index.html"
+            ><img
+              src="/src/assets/images/stayLogo.png"
+              class="logo"
+              alt="Stay Logo"
+          /></a>
         </div>
+
+        <!-- Navigasjon IKKE innlogget -->
         <div class="nav-guest">
-            <a href="index.html">Romliste</a>
+          <a href="index.html">Romliste</a>
+          <a href="booking.html">Mine bookinger</a>
+          <a href="login.html" class="btn-primary">Logg inn</a>
         </div>
-    </nav>
+
+        <!-- Navigasjon innlogget -->
+        <div class="nav-user" style="display: none">
+          <a href="index.html">Romliste</a>
+          <a href="booking.html">Mine bookinger</a>
+          <a href="userProfile.html">Min profil</a>
+          <button class="btn-logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+        </div>
+      </nav>
   </header>
 
   <main class="login-wrapper">
