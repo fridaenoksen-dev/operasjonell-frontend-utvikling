@@ -160,7 +160,7 @@ img.thumb {
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .room-hero {
     grid-template-columns: 1fr;
   }

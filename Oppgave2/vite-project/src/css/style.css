@@ -6,12 +6,21 @@
   --s-5: 64px;
 }
 
+header {
+  border-bottom: #7a1f1b 1px solid;
+}
+
 body {
   margin: 0 auto;
-  max-width: 1200px;
   background: #fbf6f1;
   font-family: "inter", sans-serif;
   font-size: 12px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
 section {
@@ -19,12 +28,12 @@ section {
 }
 
 nav {
-  padding: 12px 16px;
+  padding: 12px 30px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: var(--s-3);
-  border-bottom: #7a1f1b 1px solid;
+  border-bottom: none;
 }
 
 .nav-guest {
@@ -136,4 +145,14 @@ button {
   padding: 6px 12px;
   color: #b23a32;
   cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  background-color: #7a1f1b;
+  margin-top: 50px;
+  text-align: center;
+  height: 150px;
+  color: #f9f9f9;
 }
