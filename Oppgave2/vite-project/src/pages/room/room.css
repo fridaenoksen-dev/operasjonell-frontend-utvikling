@@ -132,6 +132,17 @@ img.thumb {
   border-radius: var(--s-2);
 }
 
+.booking-form textarea {
+  padding: var(--s-3);
+  background: #f4edeb;
+  height: 80px;
+  border-radius: 12px;
+  border: none;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
 .btn-book {
   margin-top: var(--s-1);
 }
