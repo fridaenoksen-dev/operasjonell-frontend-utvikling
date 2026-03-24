@@ -98,10 +98,14 @@
 
               <form class="booking-form">
                 <label class="form-label" for="check-in">Innsjekk</label>
-                <input type="date" id="check-in" name="check-in">
+                <input type="date" id="check-in" name="check-in" required>
 
                 <label class="form-label" for="check-out">Utsjekk</label>
-                <input type="date" id="check-out" name="check-out">
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label class="form-label">Antall gjester</label>
+                <input type="number" id="guestCount" min="1" max="2" value="1" required>
+
                 <button type="submit" class="btn-primary btn-book">Book nå</button>
               </form>
               </div>
