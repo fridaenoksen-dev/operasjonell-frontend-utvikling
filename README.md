@@ -2,13 +2,13 @@
 
 📖 Om prosjektet
 
-Vår kunde er Stay, som har mange små overnattingssteder. De har behov for en brukervennlig digital bookingløsning, slik at besøkende og brukere enkelt kan finne relevant informasjon og booke rom. 
+Vår kunde er Stay, som har mange små overnattingssteder. De har behov for en brukervennlig digital bookingløsning, slik at besøkende og brukere enkelt kan finne relevant informasjon og booke rom.
 Prosjektet
 Stay er en digital tjeneste som gjør det enkelt å finne og booke rom hos små Bed & Breakfast-steder. Løsningen skal gi oversikt over tilgjengelighet, pris og romtype, samt støtte anmeldelser og bookingforespørsler.
 Målgruppe
 Vår primærmålgruppe er privatpersoner som ønsker å booke overnatting hos små Bed & Breakfast-steder.
 
-Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversikt over sine tidligere opphold, slik at de enkelt kan bestille på samme sted igjen. 
+Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversikt over sine tidligere opphold, slik at de enkelt kan bestille på samme sted igjen.
 
 ---
 
@@ -17,7 +17,6 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 - [Frida] - Backlog for mappe 2+samle alt
 - [Dastan Hawrami] - Github-repo+Enkelt arbeidsflyt+Pr-mal
 - [Iben] - Wireframe/sidekart i Figjam
-- [    ] - Krav/Qa-sjekkleste+starte prosjektdokument
 
 ---
 
@@ -42,20 +41,13 @@ Sekundærmålgruppen er privatpersoner som reiser ofte og ønsker en rask oversi
 
 📂 Ansvarsfordeling per side
 
-| Gruppe   | Side           | Ressurs (API)                     | Reserve  |
-| -------- | -------------- | --------------------------------- | -------- |
-|Dasatan   |Forside         | rooms (GET, POST)                 | [Navn 2] |
-|Iben      |Login,registre  | users (GET, PATCH, DELETE)        | [Navn 3] |
-|Fride     |Mine bookinger  | bookings (GET, POST, DELETE)      | [Navn 4] |
-|          |Anmeldelser     | rooms/reviews (GET, POST, DELETE) | [Navn 1] |
+| Gruppe  | Side           | Ressurs (API)                     |
+| ------- | -------------- | --------------------------------- |
+| Dasatan | Forside        | rooms (GET, POST,Delete, Update)  |
+| Iben    | Login,registre | users (GET, PATCH, DELETE)        |
+| Fride   | Mine bookinger | bookings (GET, POST, DELETE)      |
+|         | Anmeldelser    | rooms/reviews (GET, POST, DELETE) |
 
 \*Hver side må inneholde full CRUD-funksjonalitet mot API.
 
-/📂 Prosjektstruktur
-├── index.html
-├── css/
-├── js/
-├── assets/
-└── README.md
----
 Vi oppdatere README etter hvert som prosjektet utvikler seg 🎓
