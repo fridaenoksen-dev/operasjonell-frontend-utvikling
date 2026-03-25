@@ -1,0 +1,202 @@
+<!-- Iben Ravn -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="userProfile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <title>Min profil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                <img src="/Oppgave2/vite-project/src/assets/images/stayLogo.png" class="logo" alt="Stay Logo"/>
+                </a>
+            </div>
+            <div class="nav-user">
+                <a href="index.html">Romliste</a>
+                <a href="bookings.html">Mine bookinger</a>
+                <a href="userProfile.html">Min profil</a>
+                <button class="btn-secondary">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Logg ut
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Min profil</h1>
+
+        <div class="profile-layout">
+
+        <!-- Sidebar -->
+        
+        <aside class="profile-sidebar">
+            <div class="avatar-wrapper">
+                <div class="avatar-placeholder" aria-hidden="true">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <p class="profile-name">Ola Nordmann</p>
+                <p class="profile-email">ola@epost.no</p>
+            </div>
+       
+        <hr class="sidebar-divider" />
+
+        <nav class="sidebar-nav" aria-label="Profilseksjoner">
+            <a href="#personal" class="sidebar-link active">
+                <i class="fa-solid fa-user"></i> Personlig info
+            </a>
+            <a href="#address" class="sidebar-link">
+                <i class="fa-solid fa-location-dot"></i> Adresse
+            </a>
+            <a href="#delete" class="sidebar-link">
+                <i class="fa-solid fa-trash-can"></i> Slett konto
+            </a>
+        </nav>
+        </aside>
+
+        <!-- Innhold -->
+        <div class="profile-content">
+        
+        <!-- Personlig info -->
+        <section class="profile-section" id="personal" aria-labelledby="title-personal">
+            <div class="section-header">
+                <h2 class="section-title" id="title-personal">Personlig informasjon</h2>
+                <button class="btn-secondary" id="btn-edit-personal">
+                    <i class="fa-regular fa-pen-to-square"></i> Rediger
+                </button>
+            </div>
+
+        <form class="profile-form" id="form-personal" novalidate>
+            <div class="form-row">
+                <div class="form-group">
+                <label class="form-label" for="first-name">Fornavn</label>
+                <input class="form-input" type="text" id="first-name" name="firstName" value="Ola" disabled />
+                </div>
+                <div class="form-group">
+                <label class="form-label" for="last-name">Etternavn</label>
+                <input class="form-input" type="text" id="last-name" name="lastName" value="Nordmann" disabled />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email">E-post</label>
+                <input class="form-input" type="email" id="email" name="email" value="ola@epost.no" disabled />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="phone">Telefon</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="Ikke oppgitt" disabled />
+            </div>
+
+            <div class="form-actions" id="actions-personal">
+                <button type="button" class="btn-secondary" id="btn-cancel-personal">Avbryt</button>
+                <button type="submit" class="btn-primary">Lagre endringer</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Adresse -->
+     <section class="profile-section" id="address" aria-labelledby="title-address">
+        <div class="section-header">
+            <h2 class="section-title" id="title-address">Adresse</h2>
+            <button class="btn-secondary" id="btn-edit-address">
+                <i class="fa-regular fa-pen-to-square"></i> Rediger
+            </button>
+        </div>
+
+        <form class="profile-form" id="form-address" novalidate>
+            <div class="form-group">
+                <label class="form-label" for="street">Gateadresse</label>
+                <input class="form-input" type="text" id="street" name="street" placeholder="Ikke oppgitt" disabled />
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="postal">Postnummer</label>
+                  <input class="form-input" type="text" id="postal" name="postal"
+                    placeholder="0000" disabled />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="city">Poststed</label>
+                  <input class="form-input" type="text" id="city" name="city"
+                    placeholder="Ikke oppgitt" disabled />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="country">Land</label>
+                    <input class="form-input" type="text" id="country" name="country" placeholder="Norge" disabled />
+                </div>
+
+                <div class="form-actions" id="actions-address">
+                    <button type="button" class="btn-secondary" id="btn-cancel-address">Avbryt</button>
+                    <button type="submit" class="btn-primary">Lagre endringer</button>
+                </div>
+            </div>
+        </form>
+     </section>
+
+
+     <!-- Passord -->
+      <section class="profile-section" id="password" aria-labelledby="title-password">
+        <div class="section-header">
+            <h2 class="section-title" id="title-password">Endre passord</h2>
+        </div>
+
+         <form class="profile-form" id="form-password" novalidate>
+            <div class="form-group">
+                <label class="form-label" for="current-password">Nåværende passord</label>
+                <input class="form-input" type="password" id="current-password"
+                  name="currentPassword" placeholder="••••••••" autocomplete="current-password" />
+              </div>
+
+            <div class="form-group">
+                <label class="form-label" for="new-password">Nytt passord</label>
+                <input class="form-input" type="password" id="new-password"
+                  name="newPassword" placeholder="••••••••" autocomplete="new-password" />
+                <p class="form-hint">Minst 8 tegn</p>
+             </div>
+
+            <div class="form-group">
+                <label class="form-label" for="confirm-password">Bekreft nytt passord</label>
+                <input class="form-input" type="password" id="confirm-password" name="confirmPassword" placeholder="••••••••" autocomplete="new-password" />
+            </div>
+
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Oppdater passord</button>
+            </div>
+        </form>
+      </section>
+
+      <!-- Slett konto -->
+      <section class="profile-section-delete" id="delete" aria-labelledby="title-delete">
+        <div class="section-header">
+            <h2 class="section-title" id="title-delete">Slett konto</h2>
+        </div>
+        <p class="delete-text">
+            Sletting av kontoen din er permanent og kan ikke angres. All data tilknyttet kontoen din vil bli slettet.
+        </p>
+        <button class="btn-delete" id="btn-delete-account">
+            <i class="fa-regular fa-trash-can"></i> Slett kontoen min
+        </button>
+      </section>
+
+        </div>
+        </div>
+    </main>
+
+    <script src="userProfile.ts"></script>
+</body>
+</html>
