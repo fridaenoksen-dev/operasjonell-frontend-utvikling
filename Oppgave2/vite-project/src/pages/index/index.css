@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;600;700&display=swap");
+
+body {
+  margin: 0;
+  max-width: 1200px;
+  background: #fbf6f1;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+}
+
+header {
+  background-color: #7a1f1b;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.push-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.logg-inn {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+}
+
+.logg-inn:hover {
+  background-color: white;
+  color: #7a1f1b;
+}
+
+.registrer {
+  background-color: white;
+  color: #7a1f1b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+}
+.registrer:hover {
+  background-color: white;
+  color: #7a1f1b;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #7a1f1b;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.intro {
+  text-align: center;
+  color: #7a1f1b;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "inter", sans-serif;
+}
+
+.innhold-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.søke-seksjon {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px black;
+  width: 500px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+  margin-top: auto;
+}
+.søke-seksjon h2 {
+  color: #7a1f1b;
+  margin: 0 0 20px 0;
+  font-size: 2rem;
+  font-family: "montserrat", sans-serif;
+}
+
+.søke-rad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.søke-felt {
+  width: 100%;
+  box-sizing: border-box;
+}
+.søke-felt label {
+  display: block;
+  color: #7a1f1b;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: "inter", sans-serif;
+}
+.søke-felt input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #b23a32;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+.søke-felt select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #b23a32;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+.søke-felt input:focus {
+  outline: none;
+  border-color: #b23a32;
+}
+.søke-felt select:focus {
+  outline: none;
+  border-color: #b55a4a;
+}
+
+.bestille-knapp {
+  background-color: #b23a32;
+  color: #f9f9f9;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5px;
+  font-family: "inter", sans-serif;
+}
+
+.bestille-knapp:hover {
+  background-color: #b23a32;
+}
+
+.rom-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.rom-kort {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px black;
+  overflow: hidden;
+  border-right: 5px solid #b23a32;
+}
+
+.rom-innhold {
+  padding: 30px;
+}
+
+.rom-kort h3 {
+  color: #7a1f1b;
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+}
+.rom-info {
+  color: #333;
+  margin: 15px 0;
+  line-height: 2;
+  font-family: "inter", sans-serif;
+}
+.rom-pris {
+  font-size: 30px;
+  color: #7a1f1b;
+  font-weight: bold;
+  margin: 20px 0;
+  font-family: "montserrat", sans-serif;
+}
+.rom-detaljer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border-left: 5px solid #b23a32;
+}
+.detalj {
+  display: block;
+  font-size: 15px;
+}
+.rom-bilde {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.søke-knapp {
+  background-color: #b23a32;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  margin-top: 20px;
+}
+.søke-knapp:hover:hover {
+  background-color: #b23a32;
+}
+
+footer {
+  background-color: #7a1f1b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* for stor skjerm enheter*/
+
+@media (max-width: 900px) {
+  .innhold-container {
+    flex-direction: column;
+  }
+}
+
+.søke-seksjon {
+  width: 100%;
+  margin-left: 0;
+  position: relative;
+  top: 0;
+}
+
+/* her er det for små skjerm*/
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+  .søke-seksjon {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .søke-rad {
+    flex-direction: column;
+  }
+  .søke-felt {
+    width: 100%;
+  }
+}

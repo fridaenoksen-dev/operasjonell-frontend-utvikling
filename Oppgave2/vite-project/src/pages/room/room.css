@@ -68,7 +68,7 @@ img.thumb {
 .price-label,
 .form-label {
   color: #666;
-  margin: var(--s-1) 0 var(--s-1) 0;
+  margin-top: var(--s-1);
   font-family: "Inter", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -132,6 +132,10 @@ img.thumb {
   border-radius: var(--s-2);
 }
 
+.btn-book {
+  margin-top: var(--s-1);
+}
+
 .reviews {
   margin-top: var(--s-5);
 }
@@ -156,7 +160,7 @@ img.thumb {
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .room-hero {
     grid-template-columns: 1fr;
   }

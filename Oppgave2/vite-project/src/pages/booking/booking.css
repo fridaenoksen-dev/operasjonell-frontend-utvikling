@@ -1,0 +1,270 @@
+/*Frida E. Enoksen*/
+
+.booking-list {
+  padding: var(--s-3);
+  display: grid;
+  gap: var(--s-2);
+  background: #fefefe;
+  border-radius: var(--s-3);
+}
+
+.card-list,
+.history {
+  list-style: none;
+  padding: var(--s-3);
+  margin: 0;
+  display: grid;
+  gap: var(--s-2);
+}
+
+.booking-card {
+  display: flex;
+  gap: var(--s-2);
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-4);
+  align-items: stretch;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.booking-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-2);
+  padding-right: var(--s-3);
+}
+
+.room-name {
+  font-size: 22px;
+}
+
+.status-confirmed {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #e7f4ea;
+  color: #2e7d32;
+}
+
+.room-image {
+  width: 310px;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.booking-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dates {
+  display: flex;
+  gap: var(--s-4);
+  margin-top: var(--s-4);
+  align-items: start;
+}
+
+.date-item {
+  min-width: 0;
+}
+
+.date-label,
+.price-label,
+.history-label {
+  color: #666;
+  margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.date-value {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 12px 0;
+}
+
+.features {
+  display: flex;
+  gap: var(--s-2);
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.feature {
+  background: #f4edeb;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.booking-bottom {
+  margin-top: var(--s-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--s-2);
+  padding-bottom: var(--s-3);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-2);
+}
+
+.price-value {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.meta {
+  margin-top: var(--s-2);
+  color: #666;
+  display: grid;
+  gap: var(--s-2);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  align-items: flex-end;
+  padding: 12px;
+}
+
+.btn-book {
+  margin-top: var(--s-1);
+}
+
+.history-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--s-3);
+}
+
+.history-card {
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  border: 1px solid #e8ded5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.history-img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.history-title {
+  margin: 6px 16px 0;
+}
+
+.history-dates {
+  margin-left: var(--s-2);
+  font-size: 14px;
+  color: #666;
+}
+
+.history-label {
+  margin-left: var(--s-2);
+}
+
+.stars {
+  display: flex;
+  margin-left: var(--s-2);
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.review-textarea {
+  margin-left: var(--s-2);
+  margin-right: var(--s-2);
+  padding: var(--s-3);
+  background: #f4edeb;
+  height: 80px;
+  border-radius: 12px;
+  border: none;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.history-review {
+  margin-left: var(--s-2);
+  margin-right: var(--s-2);
+  background: #f4edeb;
+  border-radius: 12px;
+  padding: var(--s-3);
+}
+
+.history-actions {
+  margin: var(--s-2);
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--s-2);
+}
+
+.btn-review {
+  margin: var(--s-1) 0 var(--s-4) var(--s-2);
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 610px) {
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .booking-content {
+    padding: var(--s-3);
+  }
+
+  .booking-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    align-items: flex-start;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+}
