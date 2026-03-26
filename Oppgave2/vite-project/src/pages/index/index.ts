@@ -8,3 +8,12 @@ async function getUsers() {
   }
 }
 getUsers();
+
+// lag en ny bruker//
+
+async function createUser() {
+  const response = await fetch("http://localhost:3000/api/users");
+  method: "POST",
+  Headers: 
+  
+}
