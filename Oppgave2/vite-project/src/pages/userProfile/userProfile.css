@@ -1,1 +1,210 @@
 /* Iben Ravn */
+
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--s-4);
+  align-items: start;
+  padding-bottom: var(--s-5);
+}
+
+/* Sidebar */
+.profile-sidebar {
+  background: #fefefe;
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: var(--s-3);
+  display: grid;
+  gap: var(--s-2);
+  text-align: center;
+}
+
+.avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2) 0;
+}
+
+.avatar-placeholder {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid #e8ded5;
+  background: #f4edeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #b23a32;
+  margin: 0 auto;
+}
+
+.profile-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7a1f1b;
+  margin: 0;
+}
+
+.profile-email {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.sidebar-nav {
+  display: grid;
+  gap: 4px;
+  text-align: left;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--s-1);
+  color: #333;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: #f4edeb;
+  color: #7a1f1b;
+}
+
+.sidebar-link i {
+  width: 16px;
+  color: #b23a32;
+}
+
+/* Hoved-innhold */
+.profile-content {
+  display: grid;
+  gap: var(--s-3);
+}
+
+.profile-section {
+  background: #fefefe;
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: var(--s-3);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--s-3);
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7a1f1b;
+  margin: 0;
+}
+
+/* Skjema */
+.profile-form {
+  display: grid;
+  gap: var(--s-2);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-2);
+}
+
+.form-group {
+  display: grid;
+  gap: var(--s-1);
+}
+
+.form-label {
+  color: #666;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input {
+  padding: var(--s-2);
+  border: 1px solid #e8ded5;
+  border-radius: var(--s-2);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background: #fbf6f1;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #b23a32;
+}
+
+.form-input:disabled {
+  background: #f4edeb;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.form-hint {
+  color: #999;
+  font-size: 11px;
+  margin: 0;
+}
+
+.form-actions {
+  display: none;
+  justify-content: flex-end;
+  gap: var(--s-2);
+  margin-top: var(--s-1);
+}
+
+.form-actions.visible {
+  display: flex;
+}
+
+/* Passord-seksjonen har alltid synlige knapper */
+#form-password .form-actions {
+  display: flex;
+}
+
+/* Slett konto */
+.danger-zone {
+  border-color: #f5c6c4;
+}
+
+.danger-text {
+  color: #666;
+  margin-bottom: var(--s-2);
+}
+
+/* Responsiv */
+@media (max-width: 760px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
