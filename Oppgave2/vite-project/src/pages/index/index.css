@@ -1,50 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;600;700&display=swap");
 
-body {
-  margin: 0;
-  max-width: 1200px;
-  background: #fbf6f1;
-  font-family: "inter", sans-serif;
-  font-size: 12px;
-}
-
-header {
-  background-color: #7a1f1b;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo {
-  height: 50px;
-  width: auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
 .push-buttons {
   display: flex;
   gap: 10px;
@@ -263,13 +218,6 @@ h2 {
 }
 .søke-knapp:hover:hover {
   background-color: #b23a32;
-}
-
-footer {
-  background-color: #7a1f1b;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
 
 /* for stor skjerm enheter*/
