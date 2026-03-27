@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/pages/userProfile.css" />
+    <link rel="stylesheet" href="/src/pages/userProfile/userProfile.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -24,11 +24,21 @@
                 <img src="/src/assets/images/stayLogo.png" class="logo" alt="Stay Logo"/>
                 </a>
             </div>
-            <div class="nav-user">
+
+        <!-- Navigasjon IKKE innlogget -->
+            <div class="nav-guest">
+                <a href="index.html">Romliste</a>
+                <a href="booking.html">Mine bookinger</a>
+                <a href="login.html" class="btn-primary">Logg inn</a>
+            </div>            
+
+
+            <!-- Navigasjon innlogget -->
+            <div class="nav-user" style="display: none">
                 <a href="index.html">Romliste</a>
                 <a href="booking.html">Mine bookinger</a>
                 <a href="userProfile.html">Min profil</a>
-                <button class="btn-secondary">
+                <button class="btn-logout">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i> Logg ut
                 </button>
             </div>
