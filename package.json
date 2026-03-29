@@ -1,0 +1,30 @@
+{
+  "name": "operasjonell-frontend-utvikling",
+  "version": "1.0.0",
+  "description": "📖 Om prosjektet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fridaenoksen-dev/operasjonell-frontend-utvikling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fridaenoksen-dev/operasjonell-frontend-utvikling/issues"
+  },
+  "homepage": "https://github.com/fridaenoksen-dev/operasjonell-frontend-utvikling#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
